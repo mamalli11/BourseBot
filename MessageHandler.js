@@ -63,7 +63,8 @@ module.exports.compSymbols = (symbol1, symbol2) => {
     }
 
     const time = moment().locale('fa');
-    return `📊 سهام اول : ${symbol1.symbol}
+    return `
+    📊 سهام اول : ${symbol1.symbol}
     📊 سهام دوم : ${symbol2.symbol}
 
     مقایسه بین این دو سهم :
