@@ -4,15 +4,16 @@ const debug = require("debug")("bot");
 const morgan = require("morgan");
 
 const Companies = require("./models/Companies");
+const Groups = require("./models/Groups");
 const connectDB = require("./config/db");
 const winston = require("./config/winston");
 const { createData } = require("./Utils/CreateData");
-const { symbolButtonList } = require("./Utils/Transformer");
+const { symbolButtonList, categorizedButtonList } = require("./Utils/Transformer");
 const { startMessage, symbolDetail, compSymbols } = require("./MessageHandler");
 const Users = require("./models/Users");
 
 
-let symbolList;
+let symbolList, categorizedList;
 let pelan;
 let isComparison = false;
 let CompSymbol = []
@@ -34,11 +35,30 @@ createData();
 
 (async () => {
     symbolList = await Companies.find();
+    categorizedList = await Groups.find();
 })()
 
 const bot = new Telegraf(process.env.botToken);
 
-bot.start(ctx => ctx.reply(startMessage()));
+bot.start(ctx => ctx.reply(startMessage(),
+    {
+        reply_markup: {
+            keyboard: [
+                [
+                    {
+                        text: "🏢 شرکت ها",
+                        callback_data: "null"
+                    },
+                    {
+                        text: "🗂 دسته بندی",
+                        callback_data: "categorized_"
+                    }
+                ]
+            ]
+
+        }
+    })
+);
 
 bot.use(async (ctx, next) => {
     try {
@@ -90,6 +110,15 @@ bot.command("symbol_list", async (ctx) => {
         })
 });
 
+bot.command("groups_list", async (ctx) => {
+    ctx.reply("لیست دسته بندی",
+        {
+            reply_markup: {
+                keyboard: await categorizedButtonList(categorizedList)
+            }
+        })
+});
+
 bot.on("text", async (ctx) => {
     const text = ctx.message.text;
     if (!isComparison) {
@@ -126,6 +155,15 @@ bot.on("text", async (ctx) => {
                         ]
                     }
                 });
+        }
+        else if (text === "🗂 دسته بندی") {
+            ctx.reply("چی چی میگی 😶",
+                {
+                    reply_markup: {
+                        keyboard: await categorizedButtonList(categorizedList)
+                    }
+                })
+
         }
         else {
             ctx.reply("چی چی میگی 😶")
@@ -193,10 +231,12 @@ bot.action(/^question_/, async (ctx) => {
     }
 });
 
+
 bot.launch()
     .then(() => {
         debug("Connected To Telegram");
-    }).catch((err) => {
+    })
+    .catch((err) => {
         debug("Con't Connected To Telegram");
         if (err.code === "ETIMEDOUT") {
             console.log("Check your internet connection");

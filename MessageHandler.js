@@ -1,20 +1,7 @@
 const moment = require('jalali-moment');
 const { addUnit } = require("./Utils/MathUtils");
 
-const months = [
-    "فروردین",
-    "اردیبهشت",
-    "خرداد",
-    "تیر",
-    "مهرداد",
-    "شهریور",
-    "مهر",
-    "آبان",
-    "آذر",
-    "دی",
-    "بهمن",
-    "اسفند",
-]
+const months = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مهرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
 
 module.exports.startMessage = () => {
     return `سلام
@@ -23,6 +10,7 @@ module.exports.startMessage = () => {
 
     لیست قابلیات های من 
     /symbol_list
+    /groups_list
     /best_symbols
     /comp_symbol
 
