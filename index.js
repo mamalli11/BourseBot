@@ -257,17 +257,6 @@ bot.on("message_auto_delete_timer_changed",
     ctx => ctx.reply("حالا میزاشتی پیام باشه چرا میخوای به پاکی\n انقدر به من بی اعتمادی 😒")
 );
 
-bot.mention("Mamalli7", ctx => ctx.reply("شما یه کاربر را منشن کردید!!!"));
-
-bot.hashtag("تبلیغ", async ctx => {
-    await ctx.deleteMessage(ctx.message.message_id);
-    const tempMessage = await ctx.reply(`کاربر عزیز ${ctx.message.from.first_name}
-    ارسال هشتک در این گروه ممنوع است.
-    ارسال مجدد = حذف از گروه`);
-    setTimeout(() => {
-        ctx.deleteMessage(tempMessage.message_id);
-    }, 1500)
-});
 
 bot.action(/^chart_/, ctx => {
     const text = ctx.match.input.split("_")[1];
