@@ -3,19 +3,19 @@ const dotEnv = require("dotenv");
 const debug = require("debug")("bot");
 const morgan = require("morgan");
 
-const Companies = require("./models/Companies");
-const Groups = require("./models/Groups");
-const connectDB = require("./config/db");
-const winston = require("./config/winston");
-const { createData } = require("./Utils/CreateData");
-const { symbolButtonList, categorizedButtonList } = require("./Utils/Transformer");
-const { startMessage, symbolDetail, compSymbols, groupDetail } = require("./MessageHandler");
 const Users = require("./models/Users");
+const connectDB = require("./config/db");
+const Groups = require("./models/Groups");
+const winston = require("./config/winston");
+const Companies = require("./models/Companies");
+const { createData } = require("./Utils/CreateData");
+const { symbolButtonList, categorizedButtonList, searchButtonList } = require("./Utils/Transformer");
+const { startMessage, symbolDetail, compSymbols, groupDetail } = require("./MessageHandler");
 
 
 let symbolList, categorizedList;
 let pelan;
-let isComparison = false;
+let isComparison = false, isSearch = false;
 let CompSymbol = []
 
 
@@ -40,8 +40,9 @@ createData();
 
 const bot = new Telegraf(process.env.botToken);
 
-bot.start(ctx => ctx.reply(startMessage(),
-    {
+bot.start(ctx => {
+    isComparison = false, isSearch = false;
+    ctx.reply(startMessage(), {
         reply_markup: {
             keyboard: [
                 [
@@ -59,9 +60,9 @@ bot.start(ctx => ctx.reply(startMessage(),
                     }
                 ]
             ]
-
         }
     })
+}
 );
 
 bot.use(async (ctx, next) => {
@@ -125,9 +126,9 @@ bot.command("groups_list", async (ctx) => {
 
 bot.on("text", async (ctx) => {
     const text = ctx.message.text;
-    if (!isComparison) {
+    if (isComparison == false && isSearch == false) {
         if (text.includes(":")) {
-            const symbol1 = await Companies.findOne({ symbol: text.split(":")[0]})
+            const symbol1 = await Companies.findOne({ symbol: text.split(":")[0] })
             const symbol2 = await Companies.findOne({ symbol: text.split(":")[1] })
             if (symbol2 && symbol1) {
                 const message = compSymbols(symbol1, symbol2);
@@ -137,6 +138,28 @@ bot.on("text", async (ctx) => {
                     }
                 });
             }
+        }
+        else if (text == "🔙 بازگشت") {
+            ctx.reply("یکی از گزینه های زیرا انتخاب کنید", {
+                reply_markup: {
+                    keyboard: [
+                        [
+                            {
+                                text: "🔍 جستجو",
+                                callback_data: "null"
+                            },
+                            {
+                                text: "🏢 شرکت ها",
+                                callback_data: "null"
+                            },
+                            {
+                                text: "🗂 دسته بندی",
+                                callback_data: "categorized_"
+                            }
+                        ]
+                    ]
+                }
+            })
         }
         else if (text.length <= 6) {
             const symbol = await Companies.findOne({ symbol: text })
@@ -158,13 +181,27 @@ bot.on("text", async (ctx) => {
                     }
                 });
         }
+        else if (text === "🏢 شرکت ها") {
+            ctx.reply("لیست سهام توی دکمه ها وجود داره میتونی هرکدومشون رو کلیک کنی تا جزییاتشو ببینی",
+                {
+                    reply_markup: {
+                        keyboard: await symbolButtonList(symbolList)
+                    }
+                })
+
+        }
         else if (text === "🗂 دسته بندی") {
-            ctx.reply("چی چی میگی 😶",
+            ctx.reply("برای نمایش جزئیات دسته بندی ",
                 {
                     reply_markup: {
                         keyboard: await categorizedButtonList(categorizedList)
                     }
                 })
+
+        }
+        else if (text === "🔍 جستجو") {
+            isSearch = true;
+            ctx.reply("برای جستجو لطفا اسم شرکت را ارسال کنید")
 
         }
         else {
@@ -181,7 +218,8 @@ bot.on("text", async (ctx) => {
                 ctx.reply(groupDetail(cat, list));
             }
         }
-    } else {
+    } else if (isComparison) {
+
         const symbol = await Companies.findOne({ symbol: text });
 
         if (CompSymbol.length == 1) {
@@ -189,6 +227,21 @@ bot.on("text", async (ctx) => {
             ctx.reply(compSymbols(CompSymbol[0], CompSymbol[1]));
             isComparison = false;
         }
+    }
+    else if (isSearch) {
+        const res = await Companies.find({ 'symbol': { '$regex': text } });
+        if (res) {
+            isSearch = false;
+            ctx.reply("شرکت های یافت شده...", {
+                reply_markup: {
+                    keyboard: await searchButtonList(res)
+                }
+            });
+        }
+        else {
+            ctx.reply("چیزی یافت نشد 🤦🏻‍♂️😑");
+        }
+
     }
 });
 
