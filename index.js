@@ -127,10 +127,8 @@ bot.on("text", async (ctx) => {
     const text = ctx.message.text;
     if (!isComparison) {
         if (text.includes(":")) {
-            const symbol1 = symbolList[text.split(":")[0]];
-            // console.log(symbol1);
-            const symbol2 = symbolList[text.split(":")[1]];
-            // console.log(symbol2);
+            const symbol1 = await Companies.findOne({ symbol: text.split(":")[0]})
+            const symbol2 = await Companies.findOne({ symbol: text.split(":")[1] })
             if (symbol2 && symbol1) {
                 const message = compSymbols(symbol1, symbol2);
                 ctx.reply(message, {
