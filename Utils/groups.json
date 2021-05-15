@@ -1,6 +1,12 @@
 [
   {
-    "GroupID": 1,
+    "GroupName": "خودرو و ساخت قطعات",
+    "GroupNameEnglish": "Manufacture of parts and accessories for motor vehicles and their engines",
+    "IndustryID": 20,
+    "IndustryName": "تولید قطعات و وسایل جانبی برای وسایل نقلیه موتوری و موتور آنها",
+    "IndustryNameEnglish": "Manufacture of motor vehicles, trailers and semi-trailers"
+  },
+  {
     "GroupName": "كشاورزی و دامپروری",
     "GroupNameEnglish": "Agriculture and animal husbandry",
     "IndustryID": 1,
@@ -8,71 +14,62 @@
     "IndustryNameEnglish": "Agriculture and related service activities"
   },
   {
-    "GroupID": 2,
-    "GroupName": "استخراج و انبار ذغال سنگ سخت",
+    "GroupName": "استخراج ذغال سنگ",
     "GroupNameEnglish": "Mining and agglomeration of hard coal",
     "IndustryID": 2,
     "IndustryName": "استخراج ذغال سنگ",
     "IndustryNameEnglish": "Mining of coal and lignite; extraction of peat"
   },
   {
-    "GroupID": 3,
-    "GroupName": "استخراج سنگ معدن های فلزی آهنی",
+    "GroupName": "استخراج سنگ فلزی",
     "GroupNameEnglish": "Mining of iron ores",
     "IndustryID": 3,
     "IndustryName": "استخراج كانه های فلزی",
     "IndustryNameEnglish": "Mining of metal ores"
   },
   {
-    "GroupID": 4,
-    "GroupName": "استخراج سنگ معدن های فلزی غیرآهنی",
+    "GroupName": "استخراج فلزی غیرآهنی",
     "GroupNameEnglish": "Mining of non-ferrous metal ores",
     "IndustryID": 3,
     "IndustryName": "استخراج كانه های فلزی",
     "IndustryNameEnglish": "Mining of metal ores"
   },
   {
-    "GroupID": 5,
-    "GroupName": "استخراج سنگ، ماسه و خاك رس",
+    "GroupName": "استخراج سنگ، ماسه",
     "GroupNameEnglish": "Quarrying of stone, sand and clay",
     "IndustryID": 4,
     "IndustryName": "استخراج سایر معادن",
     "IndustryNameEnglish": "Other mining and quarrying"
   },
   {
-    "GroupID": 6,
-    "GroupName": "استخراج مواد كانی شیمیایی",
+    "GroupName": "استخراج مواد شیمیایی",
     "GroupNameEnglish": "Mining of chemical minerals",
     "IndustryID": 4,
     "IndustryName": "استخراج سایر معادن",
     "IndustryNameEnglish": "Other mining and quarrying"
   },
   {
-    "GroupID": 7,
-    "GroupName": "تولید، عمل آوری میوه و سبزیجات",
+    "GroupName": "تولید عمل آوری میوه",
     "GroupNameEnglish": "Producing and processing of fruit and vegetables",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 8,
-    "GroupName": "تولید دیگر محصولات غذایی طبقه بندی نشده در جای دیگر",
+    "GroupName": "تولید مواد غذایی",
     "GroupNameEnglish": "Manufacture of other food products n.e.c.",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 9,
-    "GroupName": "تولید روغن گیاهی و حیوانی",
+    "GroupName": "تولید روغن گیاهی",
     "GroupNameEnglish": "Manufacture of vegetable and animal oils and fats",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 10,
     "GroupName": "تولید فرآورده های لبنی",
     "GroupNameEnglish": "Manufacture of dairy products",
     "IndustryID": 5,
@@ -80,7 +77,6 @@
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 11,
     "GroupName": "تولید قند و شكر",
     "GroupNameEnglish": "Manufacture of sugar",
     "IndustryID": 36,
@@ -88,71 +84,62 @@
     "IndustryNameEnglish": "Manufacture of sugar"
   },
   {
-    "GroupID": 12,
-    "GroupName": "تولید كاكائو، شكلات و شكر قنادی",
+    "GroupName": "تولید كاكائو، شكلات",
     "GroupNameEnglish": "Manufacture of cocoa, chocolate and sugar confectionery",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 13,
-    "GroupName": "تولید مالت و نوشابه مالت دار",
+    "GroupName": "تولید نوشابه، مالت دار",
     "GroupNameEnglish": "Manufacture of malt liquors and malt",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 14,
-    "GroupName": "تولید محصولات خبازی (نانوایی)",
+    "GroupName": "تولید محصولات نانوایی",
     "GroupNameEnglish": "Manufacture of bakery products",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 15,
-    "GroupName": "تولید محصولات غذایی دام آماده",
+    "GroupName": "تولید محصولات غذایی دام",
     "GroupNameEnglish": "Manufacture of prepared animal feeds",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 16,
-    "GroupName": "تولید نشاسته و محصولات نشاسته ای",
+    "GroupName": "تولید نشاسته",
     "GroupNameEnglish": "Manufacture of starches and starch products",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 17,
-    "GroupName": "تولید نوشابه های بدون الكل و آب معدنی",
+    "GroupName": "تولید نوشابه بدون الكل",
     "GroupNameEnglish": "Manufacture of non-alcoholic soft drinks and mineral water",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 18,
-    "GroupName": "ساخت محصولات از دانه های آسیاب شده",
+    "GroupName": "ساخت محصولات از دانه آسیاب",
     "GroupNameEnglish": "Manufacture of grain mill products",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 19,
-    "GroupName": "فرآیند كنسرو ماهی و محصولات ماهی",
+    "GroupName": "فرآیند كنسرو ماهی",
     "GroupNameEnglish": "Processing and preserving of fish and fish products",
     "IndustryID": 5,
     "IndustryName": "محصولات غذایی و آشامیدنی بجز قند و شكر",
     "IndustryNameEnglish": "Manufacture of food products and beverages except suger"
   },
   {
-    "GroupID": 20,
     "GroupName": "تولید فرش و قالیچه",
     "GroupNameEnglish": "Manufacture of carpets and rugs",
     "IndustryID": 6,
@@ -160,23 +147,20 @@
     "IndustryNameEnglish": "Manufacture of textiles"
   },
   {
-    "GroupID": 21,
-    "GroupName": "تولید محصولات نساجی، به استثنای پوشاك",
+    "GroupName": "تولید محصولات نساجی",
     "GroupNameEnglish": "Manufacture of made-up textile articles, except apparel",
     "IndustryID": 6,
     "IndustryName": "منسوجات",
     "IndustryNameEnglish": "Manufacture of textiles"
   },
   {
-    "GroupID": 22,
-    "GroupName": "آماده سازی و ریسندگی نخ، پارچه بافی",
+    "GroupName": "آماده سازی و ریسندگی نخ",
     "GroupNameEnglish": "Preparation and spinning of textile fibres; weaving of textiles",
     "IndustryID": 6,
     "IndustryName": "منسوجات",
     "IndustryNameEnglish": "Manufacture of textiles"
   },
   {
-    "GroupID": 23,
     "GroupName": "ساخت انواع پاپوش",
     "GroupNameEnglish": "Manufacture of footwear",
     "IndustryID": 7,
@@ -184,1211 +168,17 @@
     "IndustryNameEnglish": "Tanning and dressing of leather; manufacture of footwear"
   },
   {
-    "GroupID": 24,
-    "GroupName": "تولید روكش چوب، تخته چند لا، ورقه، تخته تابلو و پانل",
-    "GroupNameEnglish": "Manufacture of veneer sheets; manufacture of plywood, laminboard, particle board and other panels an",
-    "IndustryID": 8,
-    "IndustryName": "محصولات چوبی",
-    "IndustryNameEnglish": "Manufacture of wood and of products of wood"
-  },
-  {
-    "GroupID": 25,
-    "GroupName": "تولید خمیر كاغذ، كاغذ و مقوا",
+    "GroupName": "تولید خمیر كاغذ",
     "GroupNameEnglish": "Manufacture of pulp, paper and paperboard",
     "IndustryID": 9,
     "IndustryName": "محصولات كاغذی",
     "IndustryNameEnglish": "Manufacture of paper and paper products"
   },
   {
-    "GroupID": 26,
-    "GroupName": "تولید دیگر محصولات كاغذی و مقوایی",
-    "GroupNameEnglish": "Manufacture of other articles of paper and paperboard",
-    "IndustryID": 9,
-    "IndustryName": "محصولات كاغذی",
-    "IndustryNameEnglish": "Manufacture of paper and paper products"
-  },
-  {
-    "GroupID": 27,
-    "GroupName": "ساخت كاغذ و مقوای موجدار و ظروف و جعبه های كاغذی و مقوایی",
-    "GroupNameEnglish": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard",
-    "IndustryID": 9,
-    "IndustryName": "محصولات كاغذی",
-    "IndustryNameEnglish": "Manufacture of paper and paper products"
-  },
-  {
-    "GroupID": 28,
     "GroupName": "چاپ",
     "GroupNameEnglish": "Printing",
     "IndustryID": 10,
     "IndustryName": "انتشار، چاپ و تكثیر",
     "IndustryNameEnglish": "Publishing, printing and reproduction of recorded media"
-  },
-  {
-    "GroupID": 29,
-    "GroupName": "تولید الیاف مصنوعی",
-    "GroupNameEnglish": "Manufacture of man-made fibres",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 30,
-    "GroupName": "تولید پلاستیك در فرمهای اولیه و لاستیك مصنوعی",
-    "GroupNameEnglish": "Manufacture of plastics in primary forms and of synthetic rubber",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 31,
-    "GroupName": "تولید حشره كشها و دیگر محصولات شیمیایی كشاورزی",
-    "GroupNameEnglish": "Manufacture of pesticides and other agrochemical products",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 32,
-    "GroupName": "تولید دیگر محصولات شیمیایی طبقه بندی نشده در جای دیگر",
-    "GroupNameEnglish": "Manufacture of other chemical products n.e.c.",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 33,
-    "GroupName": "ساخت رنگ، روغن جلا و پوشش های مشابه، جوهر چاپ و بتونه",
-    "GroupNameEnglish": "Manufacture of paints, varnishes and similar coatings, printing ink and mastics",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 34,
-    "GroupName": "تولید كود و تركیبات نیتروژن",
-    "GroupNameEnglish": "Manufacture of fertilizers and nitrogen compounds",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 35,
-    "GroupName": "تولید محصولات آرایشی و بهداشتی",
-    "GroupNameEnglish": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet prepara",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 36,
-    "GroupName": "تولید مواد دارویی، محصولات شیمیایی دارویی و داروهای گیاهی",
-    "GroupNameEnglish": "Manufacture of pharmaceuticals, medicinal chemicals and botanical products",
-    "IndustryID": 37,
-    "IndustryName": "مواد و محصولات دارویی",
-    "IndustryNameEnglish": "Manufacture of pharmaceuticals, medicinal chemicals and botanical products"
-  },
-  {
-    "GroupID": 37,
-    "GroupName": "تولید مواد شیمیایی پایه بجز كودها و تركیبات نیتروژن",
-    "GroupNameEnglish": "Manufacture of basic chemicals, except fertilizers and nitrogen compounds",
-    "IndustryID": 11,
-    "IndustryName": "محصولات شیمیایی",
-    "IndustryNameEnglish": "Manufacture of chemicals and chemical products"
-  },
-  {
-    "GroupID": 38,
-    "GroupName": "تولید دیگر محصولات لاستیكی",
-    "GroupNameEnglish": "Manufacture of other rubber products",
-    "IndustryID": 12,
-    "IndustryName": "لاستیك و پلاستیك",
-    "IndustryNameEnglish": "Manufacture of rubber and plastics products"
-  },
-  {
-    "GroupID": 39,
-    "GroupName": "تولید تایر و تیوپ اتومبیل و بازسازی تایرهای لاستیكی",
-    "GroupNameEnglish": "Manufacture of rubber tyres and tubes; retreading and rebuilding of rubber tyres",
-    "IndustryID": 12,
-    "IndustryName": "لاستیك و پلاستیك",
-    "IndustryNameEnglish": "Manufacture of rubber and plastics products"
-  },
-  {
-    "GroupID": 40,
-    "GroupName": "تولید محصولات پلاستیكی",
-    "GroupNameEnglish": "Manufacture of plastics products",
-    "IndustryID": 12,
-    "IndustryName": "لاستیك و پلاستیك",
-    "IndustryNameEnglish": "Manufacture of rubber and plastics products"
-  },
-  {
-    "GroupID": 41,
-    "GroupName": "تولید سیمان، آهك و گچ",
-    "GroupNameEnglish": "Manufacture of cement, lime and plaster",
-    "IndustryID": 39,
-    "IndustryName": "سیمان، آهك و گچ",
-    "IndustryNameEnglish": "Manufacture of cement, lime and plaster"
-  },
-  {
-    "GroupID": 42,
-    "GroupName": "تولید شیشه و محصولات شیشه ای",
-    "GroupNameEnglish": "Manufacture of glass and glass products",
-    "IndustryID": 13,
-    "IndustryName": "سایر محصولات كانی غیر فلزی",
-    "IndustryNameEnglish": "Manufacture of other non-metallic mineral product"
-  },
-  {
-    "GroupID": 43,
-    "GroupName": "تولید محصولات بتنی، سیمانی و گچی",
-    "GroupNameEnglish": "Manufacture of articles of concrete, cement and plaster",
-    "IndustryID": 13,
-    "IndustryName": "سایر محصولات كانی غیر فلزی",
-    "IndustryNameEnglish": "Manufacture of other non-metallic mineral product"
-  },
-  {
-    "GroupID": 44,
-    "GroupName": "تولید محصولات ساختمانی سرامیكی و سفالی",
-    "GroupNameEnglish": "Manufacture of structural non-refractory clay and ceramic products",
-    "IndustryID": 38,
-    "IndustryName": "كاشی و سرامیك",
-    "IndustryNameEnglish": "Manufacture of structural non-refractory clay and ceramic products"
-  },
-  {
-    "GroupID": 45,
-    "GroupName": "تولید محصولات سرامیكی نسوز",
-    "GroupNameEnglish": "Manufacture of refractory ceramic products",
-    "IndustryID": 13,
-    "IndustryName": "سایر محصولات كانی غیر فلزی",
-    "IndustryNameEnglish": "Manufacture of other non-metallic mineral product"
-  },
-  {
-    "GroupID": 46,
-    "GroupName": "تولید سرامیك غیرساختمانی",
-    "GroupNameEnglish": "Manufacture of non-structural non-refractory ceramic ware",
-    "IndustryID": 13,
-    "IndustryName": "سایر محصولات كانی غیر فلزی",
-    "IndustryNameEnglish": "Manufacture of other non-metallic mineral product"
-  },
-  {
-    "GroupID": 47,
-    "GroupName": "تولید سایر محصولات معدنی غیرفلزی",
-    "GroupNameEnglish": "Manufacture of other non-metallic mineral products n.e.c.",
-    "IndustryID": 13,
-    "IndustryName": "سایر محصولات كانی غیر فلزی",
-    "IndustryNameEnglish": "Manufacture of other non-metallic mineral product"
-  },
-  {
-    "GroupID": 48,
-    "GroupName": "ساخت فلزات اساسی آهنی و فولادی",
-    "GroupNameEnglish": "Manufacture of basic iron and steel",
-    "IndustryID": 14,
-    "IndustryName": "فلزات اساسی",
-    "IndustryNameEnglish": "Manufacture of basic metals"
-  },
-  {
-    "GroupID": 49,
-    "GroupName": "ساخت فلزات اساسی غیر آهنی",
-    "GroupNameEnglish": "Manufacture of basic precious and non-ferrous metals",
-    "IndustryID": 14,
-    "IndustryName": "فلزات اساسی",
-    "IndustryNameEnglish": "Manufacture of basic metals"
-  },
-  {
-    "GroupID": 50,
-    "GroupName": "تولید اسكلت و اتصالات فلزی (ساختمانی)",
-    "GroupNameEnglish": "Manufacture of structural metal products",
-    "IndustryID": 15,
-    "IndustryName": "ساخت محصولات فلزی",
-    "IndustryNameEnglish": "Manufacture of fabricated metal products, except machinery and equipment"
-  },
-  {
-    "GroupID": 51,
-    "GroupName": "تولید تانكر، مخزن و دیگر كانتینرهای فلزی",
-    "GroupNameEnglish": "Manufacture of tanks, reservoirs and containers of metal",
-    "IndustryID": 15,
-    "IndustryName": "ساخت محصولات فلزی",
-    "IndustryNameEnglish": "Manufacture of fabricated metal products, except machinery and equipment"
-  },
-  {
-    "GroupID": 52,
-    "GroupName": "تولید سایر محصولات فلزی",
-    "GroupNameEnglish": "Manufacture of other fabricated metal products n.e.c.",
-    "IndustryID": 15,
-    "IndustryName": "ساخت محصولات فلزی",
-    "IndustryNameEnglish": "Manufacture of fabricated metal products, except machinery and equipment"
-  },
-  {
-    "GroupID": 53,
-    "GroupName": "تولید محصولات فلزی سبك",
-    "GroupNameEnglish": "manufacture of lightweight fabricated metals",
-    "IndustryID": 15,
-    "IndustryName": "ساخت محصولات فلزی",
-    "IndustryNameEnglish": "Manufacture of fabricated metal products, except machinery and equipment"
-  },
-  {
-    "GroupID": 54,
-    "GroupName": "ساخت ماشین آلات، تجهیزات سنگین پیمانكاری و خدمات مهندسی",
-    "GroupNameEnglish": "Manufacture of heavy machinery and equipments for contractor and engineering services",
-    "IndustryID": 15,
-    "IndustryName": "ساخت محصولات فلزی",
-    "IndustryNameEnglish": "Manufacture of fabricated metal products, except machinery and equipment"
-  },
-  {
-    "GroupID": 55,
-    "GroupName": "تولید تجهیزات بالابر و جابجایی",
-    "GroupNameEnglish": "Manufacture of lifting and handling equipment",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 56,
-    "GroupName": "تولید پمپ، كمپرسور، شیرآب و دیگر شیرآلات",
-    "GroupNameEnglish": "Manufacture of pumps, compressors, taps and valves",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 57,
-    "GroupName": "تولید تجهیزات سنگین معدنی و ساختمانی",
-    "GroupNameEnglish": "Manufacture of machinery for mining, quarrying and construction",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 58,
-    "GroupName": "تولید دنده ماشین و دیگر ابزار حمل و نقل",
-    "GroupNameEnglish": "Manufacture of bearings, gears, gearing and driving elements",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 59,
-    "GroupName": "تولید دیگر ماشین آلات عمومی",
-    "GroupNameEnglish": "Manufacture of other general-purpose machinery",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 60,
-    "GroupName": "تولید فر، كوره و مشعل كوره",
-    "GroupNameEnglish": "Manufacture of ovens, furnaces and furnace burners",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 61,
-    "GroupName": "تولید لوازم خانگی",
-    "GroupNameEnglish": "Manufacture of domestic appliances",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 62,
-    "GroupName": "تولید ماشین آلات كشاورزی و جنگلداری",
-    "GroupNameEnglish": "Manufacture of agricultural and forestry machinery",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 63,
-    "GroupName": "تولید ماشین آلات نساجی پوشاك و محصولات چرمی",
-    "GroupNameEnglish": "Manufacture of machinery for textile, apparel and leather production",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 64,
-    "GroupName": "تولید موتور، توربین به استثنای موتور هواپیما و وسایل حمل و نقل و موتور سیكلت",
-    "GroupNameEnglish": "Manufacture of engines and turbines, except aircraft, vehicle and cycle engines",
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 65,
-    "GroupName": "تولید انباره ها، باطری و سلولهای اولیه اساسی",
-    "GroupNameEnglish": "Manufacture of accumulators, primary cells and primary batteries",
-    "IndustryID": 17,
-    "IndustryName": "ماشین آلات و دستگاه های برقی",
-    "IndustryNameEnglish": "Manufacture of electrical machinery and apparatus n.e.c."
-  },
-  {
-    "GroupID": 66,
-    "GroupName": "تولید سیم و كابل روكش دار",
-    "GroupNameEnglish": "Manufacture of insulated wire and cable",
-    "IndustryID": 17,
-    "IndustryName": "ماشین آلات و دستگاه های برقی",
-    "IndustryNameEnglish": "Manufacture of electrical machinery and apparatus n.e.c."
-  },
-  {
-    "GroupID": 67,
-    "GroupName": "تولید لامپهای الكتریكی و تجهیزات نوری",
-    "GroupNameEnglish": "Manufacture of electric lamps and lighting equipment",
-    "IndustryID": 17,
-    "IndustryName": "ماشین آلات و دستگاه های برقی",
-    "IndustryNameEnglish": "Manufacture of electrical machinery and apparatus n.e.c."
-  },
-  {
-    "GroupID": 68,
-    "GroupName": "ساخت توزیع كننده ها و كنترل كننده های برق",
-    "GroupNameEnglish": "Manufacture of electricity distribution and control apparatus",
-    "IndustryID": 17,
-    "IndustryName": "ماشین آلات و دستگاه های برقی",
-    "IndustryNameEnglish": "Manufacture of electrical machinery and apparatus n.e.c."
-  },
-  {
-    "GroupID": 69,
-    "GroupName": "ساخت موتورهای الكتریكی، ژنراتورها و ترانسفورماتورها",
-    "GroupNameEnglish": "Manufacture of electric motors, generators and transformers",
-    "IndustryID": 17,
-    "IndustryName": "ماشین آلات و دستگاه های برقی",
-    "IndustryNameEnglish": "Manufacture of electrical machinery and apparatus n.e.c."
-  },
-  {
-    "GroupID": 70,
-    "GroupName": "ساخت فرستنده های تلویزیونی و رادیویی و وسایل برای خطوط تلگراف و تلفن",
-    "GroupNameEnglish": "Manufacture of television and radio transmitters and apparatus for line telephony and line telegraph",
-    "IndustryID": 18,
-    "IndustryName": "ساخت رادیو، تلویزیون و دستگاهها و وسایل ارتباطی",
-    "IndustryNameEnglish": "Manufacture of radio, television and communication equipment and apparatus"
-  },
-  {
-    "GroupID": 71,
-    "GroupName": "ساخت گیرنده های رادیویی و تلویزیونی، تجهیزات ضبط و تكثیر صدا و تصویر و تجهیزات وابسته",
-    "GroupNameEnglish": "Manufacture of television and radio receivers, sound or video recording or reproducing apparatus, an",
-    "IndustryID": 18,
-    "IndustryName": "ساخت رادیو، تلویزیون و دستگاهها و وسایل ارتباطی",
-    "IndustryNameEnglish": "Manufacture of radio, television and communication equipment and apparatus"
-  },
-  {
-    "GroupID": 72,
-    "GroupName": "ساخت ابزار و وسایل اندازه گیری، بررسی، ناوبری و اهداف دیگر، به جز تجهیزات كنترل فرایند های صنعتی",
-    "GroupNameEnglish": "Manufacture of instruments and appliances for measuring, checking, testing, navigating and other pur",
-    "IndustryID": 19,
-    "IndustryName": "وسایل اندازه گیری، پزشكی و اپتیكی",
-    "IndustryNameEnglish": "Manufacture of medical, precision and optical instruments"
-  },
-  {
-    "GroupID": 73,
-    "GroupName": "تولید قطعات و وسایل جانبی برای وسایل نقلیه موتوری و موتور آنها",
-    "GroupNameEnglish": "Manufacture of parts and accessories for motor vehicles and their engines",
-    "IndustryID": 20,
-    "IndustryName": "خودرو و ساخت قطعات",
-    "IndustryNameEnglish": "Manufacture of motor vehicles, trailers and semi-trailers"
-  },
-  {
-    "GroupID": 74,
-    "GroupName": "تولید وسایل نقلیه موتوری",
-    "GroupNameEnglish": "Manufacture of motor vehicles",
-    "IndustryID": 20,
-    "IndustryName": "خودرو و ساخت قطعات",
-    "IndustryNameEnglish": "Manufacture of motor vehicles, trailers and semi-trailers"
-  },
-  {
-    "GroupID": 75,
-    "GroupName": "تولید موتورسیكلت",
-    "GroupNameEnglish": "Manufacture of motorcycles",
-    "IndustryID": 21,
-    "IndustryName": "ساخت سایر وسایل حمل و نقل",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 76,
-    "GroupName": "ساخت و تعمیر كشتی ها",
-    "GroupNameEnglish": "Building and repairing of ships",
-    "IndustryID": 21,
-    "IndustryName": "ساخت سایر وسایل حمل و نقل",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 77,
-    "GroupName": "تولید محصولات طبقه بندی نشده در جای دیگر",
-    "GroupNameEnglish": "Manufacturing n.e.c.",
-    "IndustryID": 22,
-    "IndustryName": "مبلمان و مصنوعات دیگر",
-    "IndustryNameEnglish": "Manufacture of furniture; manufacturing n.e.c."
-  },
-  {
-    "GroupID": 78,
-    "GroupName": "دیگر تولیدات در جای دیگر",
-    "GroupNameEnglish": "Multidisciplinary industrial activities",
-    "IndustryID": 23,
-    "IndustryName": "شركتهای چند رشته ای صنعتی",
-    "IndustryNameEnglish": "Multidisciplinary industrial activities"
-  },
-  {
-    "GroupID": 79,
-    "GroupName": "مهندسی شهرسازی و ساخت ساختمان (كامل و یا بخشی از آن)",
-    "GroupNameEnglish": "Building of complete constructions or parts thereof; civil engineering",
-    "IndustryID": 24,
-    "IndustryName": "پیمانكاری صنعتی",
-    "IndustryNameEnglish": "Industrial Construction"
-  },
-  {
-    "GroupID": 80,
-    "GroupName": "حمل بار زمینی",
-    "GroupNameEnglish": "Freight transport by road",
-    "IndustryID": 25,
-    "IndustryName": "حمل و نقل، انبارداری و ارتباطات",
-    "IndustryNameEnglish": "Transportation and storage"
-  },
-  {
-    "GroupID": 81,
-    "GroupName": "حمل و نقل برنامه ریزی شده مسافر",
-    "GroupNameEnglish": "Other scheduled passenger land transport",
-    "IndustryID": 25,
-    "IndustryName": "حمل و نقل، انبارداری و ارتباطات",
-    "IndustryNameEnglish": "Transportation and storage"
-  },
-  {
-    "GroupID": 82,
-    "GroupName": "سایر فعالیتهای پشتیبانی حمل و نقل",
-    "GroupNameEnglish": "Supporting and auxiliary transport activities; activities of travel agencies",
-    "IndustryID": 25,
-    "IndustryName": "حمل و نقل، انبارداری و ارتباطات",
-    "IndustryNameEnglish": "Transportation and storage"
-  },
-  {
-    "GroupID": 83,
-    "GroupName": "حمل بار دریایی",
-    "GroupNameEnglish": "Water transport",
-    "IndustryID": 25,
-    "IndustryName": "حمل و نقل، انبارداری و ارتباطات",
-    "IndustryNameEnglish": "Transportation and storage"
-  },
-  {
-    "GroupID": 84,
-    "GroupName": "بانكها و موسسات اعتباری",
-    "GroupNameEnglish": "Banks and other credit unions",
-    "IndustryID": 41,
-    "IndustryName": "بانك ها، موسسات اعتباری و سایر نهادهای پولی",
-    "IndustryNameEnglish": "Monetary intermediation"
-  },
-  {
-    "GroupID": 85,
-    "GroupName": "لیزینگ تجاری - بازرگانی",
-    "GroupNameEnglish": "Financial leasing",
-    "IndustryID": 42,
-    "IndustryName": "سایر واسطه گری های مالی",
-    "IndustryNameEnglish": "Other financial intermediation"
-  },
-  {
-    "GroupID": 86,
-    "GroupName": "سرمایه گذاریها",
-    "GroupNameEnglish": "Investment",
-    "IndustryID": 40,
-    "IndustryName": "سرمایه گذاریها",
-    "IndustryNameEnglish": "Investment"
-  },
-  {
-    "GroupID": 87,
-    "GroupName": "فعالیتهای مربوط به املاك و مستغلات با مالكیت شخصی یا اجاره ای",
-    "GroupNameEnglish": "Real estate activities with own or leased property",
-    "IndustryID": 28,
-    "IndustryName": "انبوه سازی املاك و مستغلات",
-    "IndustryNameEnglish": "Real estate activities"
-  },
-  {
-    "GroupID": 88,
-    "GroupName": "مشاوره، عرضه و تامین نرم افزار",
-    "GroupNameEnglish": "Software publishing, consultancy and supply",
-    "IndustryID": 29,
-    "IndustryName": "رایانه و فعالیتهای وابسته به آن",
-    "IndustryNameEnglish": "Computer and related activities"
-  },
-  {
-    "GroupID": 89,
-    "GroupName": "فعالیتهای مهندسی، معماری و مشاوره فنی مربوط به آنها",
-    "GroupNameEnglish": "Architectural and engineering activities and related technical consultancy",
-    "IndustryID": 30,
-    "IndustryName": "خدمات فنی و مهندسی",
-    "IndustryNameEnglish": "Engineering and other technical activities"
-  },
-  {
-    "GroupID": 90,
-    "GroupName": "تحلیل و آزمایش فنی",
-    "GroupNameEnglish": "Technical testing and analysis",
-    "IndustryID": 30,
-    "IndustryName": "خدمات فنی و مهندسی",
-    "IndustryNameEnglish": "Engineering and other technical activities"
-  },
-  {
-    "GroupID": 91,
-    "GroupName": "تولید فرآورده های نفتی تصفیه شده",
-    "GroupNameEnglish": "Manufacture of refined petroleum products",
-    "IndustryID": 31,
-    "IndustryName": "فرآورده های نفتی، كك و سوخت هسته ای",
-    "IndustryNameEnglish": "Manufacture of coke, refined petroleum products and nuclear fuel"
-  },
-  {
-    "GroupID": 95,
-    "GroupName": "مخابرات و ارتباطات",
-    "GroupNameEnglish": "Telecommunications",
-    "IndustryID": 33,
-    "IndustryName": "مخابرات",
-    "IndustryNameEnglish": "Telecommunications"
-  },
-  {
-    "GroupID": 99,
-    "GroupName": "فعالیت های خدماتی جنبی استخراج نفت و گاز به استثنای بررسی های اكتشافی",
-    "GroupNameEnglish": "Service activities incidental to oil and gas extraction excluding surveying",
-    "IndustryID": 35,
-    "IndustryName": "استخراج نفت، گاز و خدمات جنبی به جز اكتشاف",
-    "IndustryNameEnglish": "Extraction of crude petroleum and natural gas and service activities incidental to, excluding survey"
-  },
-  {
-    "GroupID": 100,
-    "GroupName": "بیمه و صندوق بازنشستگی به جز تامین اجتماعی",
-    "GroupNameEnglish": "Insurance and pension funding, except compulsory social security",
-    "IndustryID": 43,
-    "IndustryName": "بیمه و صندوق بازنشستگی به جز تامین اجتماعی",
-    "IndustryNameEnglish": "Insurance and pension funding, except compulsory social security"
-  },
-  {
-    "GroupID": 101,
-    "GroupName": "صندوق های سرمایه گذاری غیر قابل معامله با درآمد ثابت",
-    "GroupNameEnglish": "Closed-end funds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 102,
-    "GroupName": "صندوق های سرمایه گذاری غیر قابل معامله با درآمد متغیر",
-    "GroupNameEnglish": "Open-end funds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 111,
-    "GroupName": "هتلها، اردوگاهها و دیگر تداركات اقامت كوتاه",
-    "GroupNameEnglish": "Hotels; camping sites and other provision of short-stay accommodation",
-    "IndustryID": 53,
-    "IndustryName": "هتل و رستوران",
-    "IndustryNameEnglish": "Hotels & Restaurants"
-  },
-  {
-    "GroupID": 112,
-    "GroupName": "سایر شركت های غیر بورسی",
-    "GroupNameEnglish": null,
-    "IndustryID": 32,
-    "IndustryName": "سایر",
-    "IndustryNameEnglish": "Other"
-  },
-  {
-    "GroupID": 116,
-    "GroupName": "فعالیت های جنبی واسطه گری های مالی طبقه بندی نشده در جای دیگر",
-    "GroupNameEnglish": null,
-    "IndustryID": 58,
-    "IndustryName": "فعالیت های جنبی مرتبط با واسطه گری مالی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 117,
-    "GroupName": "فعالیت های مالی، حسابداری، حسابرسی و مشاوره مالیاتی به جز مؤسسات حسابرسی رسمی",
-    "GroupNameEnglish": null,
-    "IndustryID": 54,
-    "IndustryName": "فعالیت های حقوقی، حسابداری و حسابرسی، مشاوره مالیاتی و مدیریتی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 118,
-    "GroupName": "استخدام نیروی كار و تأمین پرسنل",
-    "GroupNameEnglish": null,
-    "IndustryID": 55,
-    "IndustryName": "سایر فعالیتهای تجاری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 119,
-    "GroupName": "عمده فروشی سایر كالاهای واسطه ای، قراضه و ضایعات",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 120,
-    "GroupName": "خرده فروشی فروشگاه های غیر تخصصی با عمده فروش مواد غذایی",
-    "GroupNameEnglish": "Retail sale in non-specialized stores with food wholesalers",
-    "IndustryID": 57,
-    "IndustryName": "خرده فروشی به استثنای وسایل نقلیه موتوری؛ تعمیر كالاهای شخصی و خانگی",
-    "IndustryNameEnglish": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods"
-  },
-  {
-    "GroupID": 121,
-    "GroupName": "خدمات كارگزاری و معامله گری",
-    "GroupNameEnglish": null,
-    "IndustryID": 58,
-    "IndustryName": "فعالیت های جنبی مرتبط با واسطه گری مالی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 122,
-    "GroupName": "اداره بازارهای مالی",
-    "GroupNameEnglish": null,
-    "IndustryID": 58,
-    "IndustryName": "فعالیت های جنبی مرتبط با واسطه گری مالی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 123,
-    "GroupName": "فعالیت های جنبی مرتبط با بیمه و صندوق بازنشستگی",
-    "GroupNameEnglish": null,
-    "IndustryID": 58,
-    "IndustryName": "فعالیت های جنبی مرتبط با واسطه گری مالی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 124,
-    "GroupName": "فعالیت های حقوقی",
-    "GroupNameEnglish": null,
-    "IndustryID": 54,
-    "IndustryName": "فعالیت های حقوقی، حسابداری و حسابرسی، مشاوره مالیاتی و مدیریتی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 125,
-    "GroupName": "فعالیت های ورزشی",
-    "GroupNameEnglish": null,
-    "IndustryID": 59,
-    "IndustryName": "فعالیت های رفاهی، فرهنگی و ورزشی",
-    "IndustryNameEnglish": "Recreational, cultural and sporting activities"
-  },
-  {
-    "GroupID": 130,
-    "GroupName": "فعالیت های سبد گردانی",
-    "GroupNameEnglish": null,
-    "IndustryID": 58,
-    "IndustryName": "فعالیت های جنبی مرتبط با واسطه گری مالی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 132,
-    "GroupName": "خدمات مشاوره سرمایه گذاری",
-    "GroupNameEnglish": null,
-    "IndustryID": 58,
-    "IndustryName": "فعالیت های جنبی مرتبط با واسطه گری مالی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 133,
-    "GroupName": "عملیات صرافی",
-    "GroupNameEnglish": null,
-    "IndustryID": 58,
-    "IndustryName": "فعالیت های جنبی مرتبط با واسطه گری مالی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 134,
-    "GroupName": "فعالیت های بازار گردانی",
-    "GroupNameEnglish": null,
-    "IndustryID": 42,
-    "IndustryName": "سایر واسطه گری های مالی",
-    "IndustryNameEnglish": "Other financial intermediation"
-  },
-  {
-    "GroupID": 135,
-    "GroupName": "فعالیت های مؤسسات حسابرسی رسمی",
-    "GroupNameEnglish": null,
-    "IndustryID": 54,
-    "IndustryName": "فعالیت های حقوقی، حسابداری و حسابرسی، مشاوره مالیاتی و مدیریتی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 138,
-    "GroupName": "سایر نهادهای اعتبار دهنده",
-    "GroupNameEnglish": null,
-    "IndustryID": 42,
-    "IndustryName": "سایر واسطه گری های مالی",
-    "IndustryNameEnglish": "Other financial intermediation"
-  },
-  {
-    "GroupID": 139,
-    "GroupName": "عمده فروشی مواد و محصولات غذایی",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 140,
-    "GroupName": "فعالیت های مشاوره تجاری و مدیریتی",
-    "GroupNameEnglish": null,
-    "IndustryID": 54,
-    "IndustryName": "فعالیت های حقوقی، حسابداری و حسابرسی، مشاوره مالیاتی و مدیریتی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 141,
-    "GroupName": "فعالیت های بانك مركزی",
-    "GroupNameEnglish": "Central Banking",
-    "IndustryID": 41,
-    "IndustryName": "بانك ها، موسسات اعتباری و سایر نهادهای پولی",
-    "IndustryNameEnglish": "Monetary intermediation"
-  },
-  {
-    "GroupID": 142,
-    "GroupName": "فعالیت های تأمین اجتماعی",
-    "GroupNameEnglish": null,
-    "IndustryID": 60,
-    "IndustryName": "اداره امور عمومی و دفاعی؛ تأمین اجتماعی",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 143,
-    "GroupName": "تولید، انتقال و توزیع نیروی برق",
-    "GroupNameEnglish": "Production, transmission and distribution of electricity",
-    "IndustryID": 61,
-    "IndustryName": "عرضه برق، گاز، بخار و آب گرم",
-    "IndustryNameEnglish": "Electricity, gas, steam and hot water supply"
-  },
-  {
-    "GroupID": 146,
-    "GroupName": "خرده فروشی كالاهای دارویی و بهداشتی، مواد و لوازم آرایشی",
-    "GroupNameEnglish": "Retail sale of pharmaceutical and medical goods, cosmetic and toilet articles",
-    "IndustryID": 57,
-    "IndustryName": "خرده فروشی به استثنای وسایل نقلیه موتوری؛ تعمیر كالاهای شخصی و خانگی",
-    "IndustryNameEnglish": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods"
-  },
-  {
-    "GroupID": 147,
-    "GroupName": "عمده فروشی تاسیسات و مصالح ساختمانی",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 148,
-    "GroupName": "عمده فروشی سایر ماشین آلات و تجهیزات",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 149,
-    "GroupName": "عمده فروشی سایر كالاهای طبقه بندی نشده در جای دیگر",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 150,
-    "GroupName": "ساخت وسایل حمل و نقل ریلی",
-    "GroupNameEnglish": null,
-    "IndustryID": 21,
-    "IndustryName": "ساخت سایر وسایل حمل و نقل",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 151,
-    "GroupName": "فروش وسایل نقلیه موتوری",
-    "GroupNameEnglish": null,
-    "IndustryID": 62,
-    "IndustryName": "فروش، نگهداری و تعمیر وسایل نقلیه موتوری، خرده فروشی سوخت خودرو",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 152,
-    "GroupName": "سایر فعالیتهای تجاری طبقه بندی نشده در جای دیگر",
-    "GroupNameEnglish": null,
-    "IndustryID": 55,
-    "IndustryName": "سایر فعالیتهای تجاری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 153,
-    "GroupName": "فروش قطعات و لوازم جانبی خودرو",
-    "GroupNameEnglish": null,
-    "IndustryID": 62,
-    "IndustryName": "فروش، نگهداری و تعمیر وسایل نقلیه موتوری، خرده فروشی سوخت خودرو",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 154,
-    "GroupName": "خرده فروشی مواد غذایی و آشامیدنی در فروشگاه های تخصصی",
-    "GroupNameEnglish": "Retail sale of food, beverages and tobacco in specialized stores",
-    "IndustryID": 57,
-    "IndustryName": "خرده فروشی به استثنای وسایل نقلیه موتوری؛ تعمیر كالاهای شخصی و خانگی",
-    "IndustryNameEnglish": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods"
-  },
-  {
-    "GroupID": 155,
-    "GroupName": "عمده فروشی سوخت جامد، مایع و گاز و محصولات مرتبط",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 156,
-    "GroupName": "استخراج نفت خام و گاز طبیعی",
-    "GroupNameEnglish": null,
-    "IndustryID": 35,
-    "IndustryName": "استخراج نفت، گاز و خدمات جنبی به جز اكتشاف",
-    "IndustryNameEnglish": "Extraction of crude petroleum and natural gas and service activities incidental to, excluding survey"
-  },
-  {
-    "GroupID": 157,
-    "GroupName": "فعالیت های تمیز كاری ساختمان و تمیز كاری صنعتی",
-    "GroupNameEnglish": null,
-    "IndustryID": 55,
-    "IndustryName": "سایر فعالیتهای تجاری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 158,
-    "GroupName": "سایر فعالیتهای آموزشی",
-    "GroupNameEnglish": null,
-    "IndustryID": 63,
-    "IndustryName": "آموزش",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 159,
-    "GroupName": "تولید گاز، توزیع سوخت های گازی از طریق سیستم های لوله كشی",
-    "GroupNameEnglish": "Manufacture of gas; distribution of gaseous fuels through mains",
-    "IndustryID": 61,
-    "IndustryName": "عرضه برق، گاز، بخار و آب گرم",
-    "IndustryNameEnglish": "Electricity, gas, steam and hot water supply"
-  },
-  {
-    "GroupID": 160,
-    "GroupName": "پژوهش و توسعه تجربی بر روی علوم طبیعی و مهندسی (NSE)",
-    "GroupNameEnglish": null,
-    "IndustryID": 64,
-    "IndustryName": "فعالیتهای تحقیق و توسعه",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10160,
-    "GroupName": "خرده فروشی از طریق رسانه های عمومی، تلفن و اینترنت",
-    "GroupNameEnglish": "Retail sale via mail order houses",
-    "IndustryID": 57,
-    "IndustryName": "خرده فروشی به استثنای وسایل نقلیه موتوری؛ تعمیر كالاهای شخصی و خانگی",
-    "IndustryNameEnglish": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods"
-  },
-  {
-    "GroupID": 10161,
-    "GroupName": "رستوران و كافی شاپ",
-    "GroupNameEnglish": null,
-    "IndustryID": 53,
-    "IndustryName": "هتل و رستوران",
-    "IndustryNameEnglish": "Hotels & Restaurants"
-  },
-  {
-    "GroupID": 10162,
-    "GroupName": "حمل و نقل هوایی",
-    "GroupNameEnglish": null,
-    "IndustryID": 25,
-    "IndustryName": "حمل و نقل، انبارداری و ارتباطات",
-    "IndustryNameEnglish": "Transportation and storage"
-  },
-  {
-    "GroupID": 10163,
-    "GroupName": "جمع آوری، تصفیه و توزیع آب",
-    "GroupNameEnglish": null,
-    "IndustryID": 10064,
-    "IndustryName": "جمع آوری، تصفیه و توزیع آب",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10164,
-    "GroupName": "ساخت ماشین آلات و تجهیزات متالورژی ",
-    "GroupNameEnglish": null,
-    "IndustryID": 16,
-    "IndustryName": "ماشین آلات و تجهیزات",
-    "IndustryNameEnglish": "Manufacture of machinery and equipment n.e.c."
-  },
-  {
-    "GroupID": 10165,
-    "GroupName": "خرده فروشی سایر فروشگاه های غیر تخصصی ",
-    "GroupNameEnglish": "Other retail sale in non-specialized stores",
-    "IndustryID": 57,
-    "IndustryName": "خرده فروشی به استثنای وسایل نقلیه موتوری؛ تعمیر كالاهای شخصی و خانگی",
-    "IndustryNameEnglish": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods"
-  },
-  {
-    "GroupID": 10166,
-    "GroupName": "عمده فروشی  فلزات و سنگ معدن های فلزی",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10167,
-    "GroupName": "تعمیر و نگهداری وسایل نقلیه موتوری",
-    "GroupNameEnglish": null,
-    "IndustryID": 62,
-    "IndustryName": "فروش، نگهداری و تعمیر وسایل نقلیه موتوری، خرده فروشی سوخت خودرو",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10168,
-    "GroupName": "عمده فروشی مواد خام كشاورزی و دام زنده",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10169,
-    "GroupName": "عمده فروشی تجهیزات و قطعات الكترونیكی و مخابراتی",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10170,
-    "GroupName": "حق العمل كاری تجاری",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10171,
-    "GroupName": "ساخت قطعات تجهیزات الكترونیكی و مخابراتی",
-    "GroupNameEnglish": null,
-    "IndustryID": 18,
-    "IndustryName": "ساخت رادیو، تلویزیون و دستگاهها و وسایل ارتباطی",
-    "IndustryNameEnglish": "Manufacture of radio, television and communication equipment and apparatus"
-  },
-  {
-    "GroupID": 10172,
-    "GroupName": "عمده فروشی رایانه و سخت افزار و نرم افزار رایانه ای",
-    "GroupNameEnglish": null,
-    "IndustryID": 56,
-    "IndustryName": "عمده فروشی و حق العمل كاری تجاری به استثنای وسایل نقلیه موتوری",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10173,
-    "GroupName": "پیمانكاری املاك و مستغلات",
-    "GroupNameEnglish": "Real estate activities on a fee or contract basis",
-    "IndustryID": 28,
-    "IndustryName": "انبوه سازی املاك و مستغلات",
-    "IndustryNameEnglish": "Real estate activities"
-  },
-  {
-    "GroupID": 10174,
-    "GroupName": "سایر فعالیت های رایانه ای",
-    "GroupNameEnglish": "Other computer and related activities",
-    "IndustryID": 29,
-    "IndustryName": "رایانه و فعالیتهای وابسته به آن",
-    "IndustryNameEnglish": "Computer and related activities"
-  },
-  {
-    "GroupID": 10175,
-    "GroupName": "فعالیت های تكمیلی منسوجات",
-    "GroupNameEnglish": null,
-    "IndustryID": 6,
-    "IndustryName": "منسوجات",
-    "IndustryNameEnglish": "Manufacture of textiles"
-  },
-  {
-    "GroupID": 10176,
-    "GroupName": "ساخت تجهیزات پزشكی و جراحی و وسایل ارتوپدی",
-    "GroupNameEnglish": "Manufacture of medical and surgical equipment and orthopaedic appliances",
-    "IndustryID": 19,
-    "IndustryName": "وسایل اندازه گیری، پزشكی و اپتیكی",
-    "IndustryNameEnglish": "Manufacture of medical, precision and optical instruments"
-  },
-  {
-    "GroupID": 10177,
-    "GroupName": "ساخت سایر تجهیزات برقی",
-    "GroupNameEnglish": "Manufacture of other electrical equipment n.e.c.",
-    "IndustryID": 17,
-    "IndustryName": "ماشین آلات و دستگاه های برقی",
-    "IndustryNameEnglish": "Manufacture of electrical machinery and apparatus n.e.c."
-  },
-  {
-    "GroupID": 10178,
-    "GroupName": "خرده فروشی پارچه، پوشاك، پاپوش و محصولات چرمی",
-    "GroupNameEnglish": "Retail sale of textiles, clothing, footwear and leather goods",
-    "IndustryID": 57,
-    "IndustryName": "خرده فروشی به استثنای وسایل نقلیه موتوری؛ تعمیر كالاهای شخصی و خانگی",
-    "IndustryNameEnglish": "Retail trade, except of motor vehicles and motorcycles; repair of personal and household goods"
-  },
-  {
-    "GroupID": 10179,
-    "GroupName": "تامین بخار و آب گرم",
-    "GroupNameEnglish": "Steam and hot water supply",
-    "IndustryID": 61,
-    "IndustryName": "عرضه برق، گاز، بخار و آب گرم",
-    "IndustryNameEnglish": "Electricity, gas, steam and hot water supply"
-  },
-  {
-    "GroupID": 10180,
-    "GroupName": "خرده فروشی سوخت خودرو",
-    "GroupNameEnglish": "Retail sale of automotive fuel",
-    "IndustryID": 62,
-    "IndustryName": "فروش، نگهداری و تعمیر وسایل نقلیه موتوری، خرده فروشی سوخت خودرو",
-    "IndustryNameEnglish": null
-  },
-  {
-    "GroupID": 10181,
-    "GroupName": "تولید فراورده های کوره کک پزی",
-    "GroupNameEnglish": "Manufacture of coke oven products",
-    "IndustryID": 31,
-    "IndustryName": "فرآورده های نفتی، كك و سوخت هسته ای",
-    "IndustryNameEnglish": "Manufacture of coke, refined petroleum products and nuclear fuel"
-  },
-  {
-    "GroupID": 10182,
-    "GroupName": "دباغی و پرداخت چرم",
-    "GroupNameEnglish": "Tanning and dressing of leather",
-    "IndustryID": 7,
-    "IndustryName": "دباغی، پرداخت چرم و ساخت انواع پاپوش",
-    "IndustryNameEnglish": "Tanning and dressing of leather; manufacture of footwear"
-  },
-  {
-    "GroupID": 10183,
-    "GroupName": "اوراق حق تقدم استفاده از تسهيلات مسكن",
-    "GroupNameEnglish": "Right of priority of housing loan facilities",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10184,
-    "GroupName": "اوراق اجاره",
-    "GroupNameEnglish": "Financial Leasing Bonds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10185,
-    "GroupName": "پرورش سایر حیوانات و تولید محصولات حیوانی طبقه بندی نشده در جای دیگر",
-    "GroupNameEnglish": "Other animal farming; production of animal products n.e.c.",
-    "IndustryID": 1,
-    "IndustryName": "كشاورزی، دامپروری و خدمات وابسته به آن",
-    "IndustryNameEnglish": "Agriculture and related service activities"
-  },
-  {
-    "GroupID": 10186,
-    "GroupName": "تولید میوه جات، خشکبار، ادویه جات و محصولات زراعی مربوط به فرآورده های آشامیدنی",
-    "GroupNameEnglish": "Growing of fruit, nuts, beverage and spice crops",
-    "IndustryID": 1,
-    "IndustryName": "كشاورزی، دامپروری و خدمات وابسته به آن",
-    "IndustryNameEnglish": "Agriculture and related service activities"
-  },
-  {
-    "GroupID": 10187,
-    "GroupName": "صندوق های سرمایه گذاری قابل معامله",
-    "GroupNameEnglish": "Exchange-Traded Fund",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10188,
-    "GroupName": "اوراق مشارکت",
-    "GroupNameEnglish": "Participation Bonds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10189,
-    "GroupName": "اوراق خزانه",
-    "GroupNameEnglish": "Treasury Bills",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10190,
-    "GroupName": "اوراق مرابحه",
-    "GroupNameEnglish": "Murabaha Bonds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10191,
-    "GroupName": "اوراق سفارش ساخت",
-    "GroupNameEnglish": "Istisnaa Bonds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10192,
-    "GroupName": "اوراق رهنی",
-    "GroupNameEnglish": "Mortgage Bonds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10193,
-    "GroupName": "گواهی سپرده",
-    "GroupNameEnglish": "Certificates of Deposit",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10194,
-    "GroupName": "اوراق منفعت",
-    "GroupNameEnglish": "Benefit Bonds",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10195,
-    "GroupName": "تولید ماشین آلات اداری، حسابداری و محاسباتی",
-    "GroupNameEnglish": "Manufacture of office, accounting and computing machinery",
-    "IndustryID": 10066,
-    "IndustryName": "تولید ماشین آلات اداری، حسابداری و محاسباتی",
-    "IndustryNameEnglish": "Manufacture of office, accounting and computing machinery"
-  },
-  {
-    "GroupID": 10196,
-    "GroupName": "اوراق خرید دین",
-    "GroupNameEnglish": "Bills of buying debt",
-    "IndustryID": 44,
-    "IndustryName": "صندوق های سرمایه گذاری و سایر اوراق بهادار",
-    "IndustryNameEnglish": "Mutual funds and other securities"
-  },
-  {
-    "GroupID": 10197,
-    "GroupName": "هنرهای دراماتیک، موسیقی و سایر فعالیت های هنری",
-    "GroupNameEnglish": "Dramatic arts, music and other arts activities",
-    "IndustryID": 59,
-    "IndustryName": "فعالیت های رفاهی، فرهنگی و ورزشی",
-    "IndustryNameEnglish": "Recreational, cultural and sporting activities"
-  },
-  {
-    "GroupID": 10198,
-    "GroupName": "فاضلاب و دفع زباله و بهداشت محیط و سایر فعالیت های مشابه",
-    "GroupNameEnglish": "Sewage and refuse disposal, sanitation and similar activities",
-    "IndustryID": 10067,
-    "IndustryName": "فاضلاب و دفع زباله و بهداشت محیط و سایر فعالیت های مشابه",
-    "IndustryNameEnglish": "Sewage and refuse disposal, sanitation and similar activities"
-  },
-  {
-    "GroupID": 10199,
-    "GroupName": "مبنای محاسبات شاخص های مالی نوآوران امین",
-    "GroupNameEnglish": null,
-    "IndustryID": 32,
-    "IndustryName": "سایر",
-    "IndustryNameEnglish": "Other"
   }
 ]

@@ -9,7 +9,7 @@ const connectDB = require("./config/db");
 const winston = require("./config/winston");
 const { createData } = require("./Utils/CreateData");
 const { symbolButtonList, categorizedButtonList } = require("./Utils/Transformer");
-const { startMessage, symbolDetail, compSymbols } = require("./MessageHandler");
+const { startMessage, symbolDetail, compSymbols, groupDetail } = require("./MessageHandler");
 const Users = require("./models/Users");
 
 
@@ -45,6 +45,10 @@ bot.start(ctx => ctx.reply(startMessage(),
         reply_markup: {
             keyboard: [
                 [
+                    {
+                        text: "🔍 جستجو",
+                        callback_data: "null"
+                    },
                     {
                         text: "🏢 شرکت ها",
                         callback_data: "null"
@@ -166,7 +170,18 @@ bot.on("text", async (ctx) => {
 
         }
         else {
-            ctx.reply("چی چی میگی 😶")
+            const cat = await Groups.findOne({ GroupName: text });
+            if (!cat) {
+                ctx.reply("چی چی میگی 😶");
+            } else {
+                const companie = await Companies.find({ GroupID: cat._id })
+                const list = [];
+                companie.map((item, index) => {
+                    list.push({ index, item: item.symbol })
+                });
+
+                ctx.reply(groupDetail(cat, list));
+            }
         }
     } else {
         const symbol = await Companies.findOne({ symbol: text });
@@ -218,6 +233,7 @@ bot.action(/^question_/, async (ctx) => {
     const text = ctx.match.input.split("_")[1];
     const symbol = await Companies.findOne({ symbol: text });
     if (pelan == 'Bronze') {
+        isComparison = false;
         ctx.reply("شما از پلن برنزی استفاده میکنید برای استفاده از این قابلیت باید اشتراک تهیه کنید.");
     }
     else {

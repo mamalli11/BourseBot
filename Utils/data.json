@@ -10,7 +10,8 @@
     "sellS": 20000000,
     "power": 0.62,
     "percent": 0.38,
-    "finalPercent": -3.43
+    "finalPercent": -3.43,
+    "GroupName": "خودرو و ساخت قطعات"
   },
   {
     "symbol": "شستا",
@@ -23,7 +24,8 @@
     "sellS": 16000000,
     "power": 2.41,
     "percent": 4.98,
-    "finalPercent": 3.62
+    "finalPercent": 3.62,
+    "GroupName": "كشاورزی و دامپروری"
   },
   {
     "symbol": "وپویا",
@@ -36,7 +38,8 @@
     "sellS": 2000000,
     "power": 6.3,
     "percent": -4.99,
-    "finalPercent": -4.69
+    "finalPercent": -4.69,
+    "GroupName": "كشاورزی و دامپروری"
   },
   {
     "symbol": "قچار",
@@ -49,7 +52,8 @@
     "sellS": 26000000,
     "power": 1.13,
     "percent": 0.86,
-    "finalPercent": 0.93
+    "finalPercent": 0.93,
+    "GroupName": "استخراج ذغال سنگ"
   },
   {
     "symbol": "فملی",
@@ -62,7 +66,8 @@
     "sellS": 16000000,
     "power": 0.56,
     "percent": -4.97,
-    "finalPercent": -4.73
+    "finalPercent": -4.73,
+    "GroupName": "استخراج سنگ فلزی"
   },
   {
     "symbol": "خساپا",
@@ -75,7 +80,8 @@
     "sellS": 18000000,
     "power": 0.74,
     "percent": 4.95,
-    "finalPercent": 4.5
+    "finalPercent": 4.5,
+    "GroupName": "استخراج فلزی غیرآهنی"
   },
   {
     "symbol": "پالایش",
@@ -88,7 +94,8 @@
     "sellS": 7000000,
     "power": 1.38,
     "percent": -7.51,
-    "finalPercent": -6.07
+    "finalPercent": -6.07,
+    "GroupName": "استخراج سنگ، ماسه"
   },
   {
     "symbol": "قاسم",
@@ -101,7 +108,8 @@
     "sellS": 29000000,
     "power": 1.71,
     "percent": 4.99,
-    "finalPercent": 4.63
+    "finalPercent": 4.63,
+    "GroupName": "استخراج مواد شیمیایی"
   },
   {
     "symbol": "سیتا",
@@ -114,7 +122,8 @@
     "sellS": 3000000,
     "power": 1.86,
     "percent": 0.46,
-    "finalPercent": 0.99
+    "finalPercent": 0.99,
+    "GroupName": "چاپ"
   },
   {
     "symbol": "خزامیا",
@@ -127,7 +136,8 @@
     "sellS": 22000000,
     "power": 1.07,
     "percent": -4.73,
-    "finalPercent": -4.23
+    "finalPercent": -4.23,
+    "GroupName": "تولید عمل آوری میوه"
   },
   {
     "symbol": "شتران",
@@ -140,7 +150,8 @@
     "sellS": 11000000,
     "power": 0.6,
     "percent": 4.95,
-    "finalPercent": 4.35
+    "finalPercent": 4.35,
+    "GroupName": "تولید مواد غذایی"
   },
   {
     "symbol": "زمگسا",
@@ -153,7 +164,8 @@
     "sellS": 20000000,
     "power": 0.62,
     "percent": 0.38,
-    "finalPercent": -3.43
+    "finalPercent": -3.43,
+    "GroupName": "تولید روغن گیاهی"
   },
   {
     "symbol": "کطبس",
@@ -166,7 +178,8 @@
     "sellS": 16000000,
     "power": 2.41,
     "percent": 4.98,
-    "finalPercent": 3.62
+    "finalPercent": 3.62,
+    "GroupName": "تولید روغن گیاهی"
   },
   {
     "symbol": "کچاد",
@@ -179,7 +192,8 @@
     "sellS": 2000000,
     "power": 6.3,
     "percent": -4.99,
-    "finalPercent": -4.69
+    "finalPercent": -4.69,
+    "GroupName": "تولید قند و شكر"
   },
   {
     "symbol": "کگل",
@@ -192,7 +206,8 @@
     "sellS": 26000000,
     "power": 1.13,
     "percent": 0.86,
-    "finalPercent": 0.93
+    "finalPercent": 0.93,
+    "GroupName": "خودرو و ساخت قطعات"
   },
   {
     "symbol": "کبافق",
@@ -205,7 +220,8 @@
     "sellS": 16000000,
     "power": 0.56,
     "percent": -4.97,
-    "finalPercent": -4.73
+    "finalPercent": -4.73,
+    "GroupName": "تولید كاكائو، شكلات"
   },
   {
     "symbol": "کدما",
@@ -218,7 +234,8 @@
     "sellS": 18000000,
     "power": 0.74,
     "percent": 4.95,
-    "finalPercent": 4.5
+    "finalPercent": 4.5,
+    "GroupName": "تولید نوشابه، مالت دار"
   },
   {
     "symbol": "کروی",
@@ -231,7 +248,8 @@
     "sellS": 7000000,
     "power": 1.38,
     "percent": -7.51,
-    "finalPercent": -6.07
+    "finalPercent": -6.07,
+    "GroupName": "تولید محصولات نانوایی"
   },
   {
     "symbol": "کاما",
@@ -244,7 +262,8 @@
     "sellS": 29000000,
     "power": 1.71,
     "percent": 4.99,
-    "finalPercent": 4.63
+    "finalPercent": 4.63,
+    "GroupName": "تولید محصولات نانوایی"
   },
   {
     "symbol": "کماسه",
@@ -257,7 +276,8 @@
     "sellS": 3000000,
     "power": 1.86,
     "percent": 0.46,
-    "finalPercent": 0.99
+    "finalPercent": 0.99,
+    "GroupName": "تولید فرش و قالیچه"
   },
   {
     "symbol": "غنوش",
@@ -270,7 +290,8 @@
     "sellS": 22000000,
     "power": 1.07,
     "percent": -4.73,
-    "finalPercent": -4.23
+    "finalPercent": -4.23,
+    "GroupName": "ساخت انواع پاپوش"
   },
   {
     "symbol": "غمارگ",
@@ -283,6 +304,7 @@
     "sellS": 11000000,
     "power": 0.6,
     "percent": 4.95,
-    "finalPercent": 4.35
+    "finalPercent": 4.35,
+    "GroupName": "چاپ"
   }
 ]

@@ -1,7 +1,9 @@
 const moment = require('jalali-moment');
+const { compile } = require('morgan');
 const { addUnit } = require("./Utils/MathUtils");
 
 const months = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مهرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
+const time = moment().locale('fa');
 
 module.exports.startMessage = () => {
     return `سلام
@@ -11,15 +13,14 @@ module.exports.startMessage = () => {
     لیست قابلیات های من 
     /symbol_list
     /groups_list
-    /best_symbols
     /comp_symbol
 
     @IAUKhShBurse_bot`
 };
 
 module.exports.symbolDetail = (data) => {
-    const time = moment().locale('fa');
-    return `📊 سهام : ${data.symbol}
+    return `
+    📊 سهام : ${data.symbol}
     حجم معاملات : ${addUnit(data.volume)}
 
     درصد خرید حقیقی : ${data.realBuyPercent}%
@@ -41,6 +42,25 @@ module.exports.symbolDetail = (data) => {
     @IAUKhShBurse_bot`
 }
 
+module.exports.groupDetail = (data, companie) => {
+
+    const sherkat = `شرکت ها : \n${companie.map((i) => `${i.index} : ${i.item} \n`)}`;
+    const msg = `*هیچ شرکتی در این دسته ثبت نشده است*`;
+
+    return `
+🗂 دسته بندی : ${data.GroupName}
+نام لاتین : ${addUnit(data.GroupNameEnglish)}
+
+نام صنعت : ${data.IndustryName}
+نام لاتین صنعت : ${data.IndustryNameEnglish}
+
+${companie.length > 0 ? sherkat : msg}
+
+📅 ${time.format('D')} ${months[time.format('M') - 1]}
+⏱ ${time.format('HH:mm')}
+
+@IAUKhShBurse_bot`
+}
 
 module.exports.compSymbols = (symbol1, symbol2) => {
     function compGenerator(key, propertyTitle) {
@@ -50,29 +70,28 @@ module.exports.compSymbols = (symbol1, symbol2) => {
             return `${propertyTitle} ${symbol2.symbol} از ${symbol1.symbol} بیشتر است`
     }
 
-    const time = moment().locale('fa');
     return `
-    📊 سهام اول : ${symbol1.symbol}
-    📊 سهام دوم : ${symbol2.symbol}
+📊 سهام اول: ${symbol1.symbol}
+📊 سهام دوم: ${symbol2.symbol}
 
-    مقایسه بین این دو سهم :
-    ${compGenerator("volume", "حجم معاملات")}
+مقایسه بین این دو سهم:
+${compGenerator("volume", "حجم معاملات")}
 
-    ${compGenerator("realBuyPercent", "درصد خرید حقیقی")}
-    ${compGenerator("realSellPercent", "درصد فروش حقیقی")}
+${compGenerator("realBuyPercent", "درصد خرید حقیقی")}
+${compGenerator("realSellPercent", "درصد فروش حقیقی")}
 
-    ${compGenerator("enter/exit", "ورود و خروج پول حقیقی")}
-    ${compGenerator("monthVolumeAvg", "حجم میانگین ماه")}
+${compGenerator("enter/exit", "ورود و خروج پول حقیقی")}
+${compGenerator("monthVolumeAvg", "حجم میانگین ماه")}
 
-    ${compGenerator("buyS", "سرانه خرید")}
-    ${compGenerator("sellS", "سرانه فروش")}
-    ${compGenerator("power", "قدرت خریدار به فروشنده")}
+${compGenerator("buyS", "سرانه خرید")}
+${compGenerator("sellS", "سرانه فروش")}
+${compGenerator("power", "قدرت خریدار به فروشنده")}
 
-    ${compGenerator("percent", "درصد معاملات")}
-    ${compGenerator("finalPercent", "درصد پایانی")}
+${compGenerator("percent", "درصد معاملات")}
+${compGenerator("finalPercent", "درصد پایانی")}
 
-    📅 ${time.format('D')} ${months[time.format('M') - 1]}
-    ⏱ ${time.format('HH:mm')}
+📅 ${time.format('D')} ${months[time.format('M') - 1]}
+⏱ ${time.format('HH:mm')}
 
-    @IAUKhShBurse_bot`
+@IAUKhShBurse_bot`
 }

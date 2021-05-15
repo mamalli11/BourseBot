@@ -2,16 +2,6 @@ const mongoose = require("mongoose");
 
 const companiesSchema = new mongoose.Schema(
     {
-        // CoID:{},
-        // CoName:{},
-        // CoNameEnglish:{},
-        // CompanySymbol:{},
-        // CoTSESymbol:{},
-        // GroupID:{},
-        // GroupName:{},
-        // IndustryID:{},
-        // IndustryName:{},
-        // CoID:{},
         symbol: {
             type: String,
             trim: true,
@@ -19,6 +9,10 @@ const companiesSchema = new mongoose.Schema(
             required: [true, "نام الزامی می باشد"],
             minlength: 3,
             maxlength: 30,
+        },
+        GroupID:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Group",
         },
         volume: {
             type: String,
