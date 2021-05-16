@@ -1,7 +1,10 @@
 const { Telegraf } = require("telegraf");
+const express = require("express");
 const dotEnv = require("dotenv");
 const debug = require("debug")("bot");
 const morgan = require("morgan");
+
+const path = require("path");
 
 const Users = require("./models/Users");
 const connectDB = require("./config/db");
@@ -11,6 +14,9 @@ const Companies = require("./models/Companies");
 const { createData } = require("./Utils/CreateData");
 const { symbolButtonList, categorizedButtonList, searchButtonList } = require("./Utils/Transformer");
 const { startMessage, symbolDetail, compSymbols, groupDetail } = require("./MessageHandler");
+
+const { setHeaders } = require("./middlewares/headers");
+const { errorHandler } = require("./middlewares/errors");
 
 
 let symbolList, categorizedList;
@@ -25,6 +31,8 @@ dotEnv.config({ path: "./config/config.env" });
 connectDB();
 debug("Connected To Database");
 
+const app = express();
+
 //* Logging
 if (process.env.NODE_ENV === "development") {
     debug("Morgan Enabled");
@@ -37,6 +45,29 @@ createData();
     symbolList = await Companies.find();
     categorizedList = await Groups.find();
 })()
+
+//* Static Folder
+app.use("/public", express.static(path.join(__dirname, "public")));
+
+//* BodyPaser
+app.use(setHeaders);
+
+//* Routes
+app.use("/", require("./routes/"));
+app.use("/api", require("./routes/payment"));
+
+//* 404 Page
+app.use(require("./controllers/errorController").get404);
+
+//* Error Handler Middleware
+app.use(errorHandler);
+
+const PORT = process.env.PORT || 3000;
+process.env.PATH = __dirname || null;
+
+app.listen(PORT, () =>
+    debug(`Server running in ${process.env.PORT} mode on port ${PORT}`)
+);
 
 const bot = new Telegraf(process.env.botToken);
 
@@ -261,7 +292,7 @@ bot.on("message_auto_delete_timer_changed",
 bot.action(/^chart_/, ctx => {
     const text = ctx.match.input.split("_")[1];
     ctx.replyWithPhoto({
-        source: "./img/chart.jpg"
+        source: "./public/img/chart.jpg"
     }, {
         caption: "نمودار سهام " + text
     })
@@ -274,7 +305,22 @@ bot.action(/^question_/, async (ctx) => {
     const symbol = await Companies.findOne({ symbol: text });
     if (pelan == 'Bronze') {
         isComparison = false;
-        ctx.reply("شما از پلن برنزی استفاده میکنید برای استفاده از این قابلیت باید اشتراک تهیه کنید.");
+        ctx.reply("شما از پلن برنزی استفاده میکنید برای استفاده از این قابلیت باید اشتراک تهیه کنید.", {
+            reply_markup: {
+                inline_keyboard: [
+                    [
+                        {
+                            text: "پنل نقره ای\n50،000 ریال",
+                            callback_data: "chart_" + text
+                        },
+                        {
+                            text: "پنل طلایی\n100،000 ریال",
+                            callback_data: "question_" + text
+                        }
+                    ]
+                ]
+            }
+        });
     }
     else {
         if (CompSymbol.length == 0) {
@@ -301,3 +347,7 @@ bot.launch()
             console.log(err);
         }
     });
+
+// Enable graceful stop
+process.once('SIGINT', () => bot.stop('SIGINT'))
+process.once('SIGTERM', () => bot.stop('SIGTERM'))
