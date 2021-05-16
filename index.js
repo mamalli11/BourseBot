@@ -1,4 +1,4 @@
-const { Telegraf } = require("telegraf");
+const { Telegraf, Markup } = require("telegraf");
 const express = require("express");
 const dotEnv = require("dotenv");
 const debug = require("debug")("bot");
@@ -287,9 +287,40 @@ bot.on("edited_message", ctx => ctx.reply("من زرنگ ترم قبل اینک�
 bot.on("message_auto_delete_timer_changed",
     ctx => ctx.reply("حالا میزاشتی پیام باشه چرا میخوای به پاکی\n انقدر به من بی اعتمادی 😒")
 );
+bot.on("contact", async (ctx) => {
+    const user = await Users.findOne({ userID: ctx.message.from.id });
+    user.phone = ctx.message.contact.phone_number;
+    await user.save();
+    ctx.reply("شماره شما ذخیره شد 👌");
+})
 
 
-bot.action(/^chart_/, ctx => {
+
+bot.action(/^buyPanel_/, async (ctx) => {
+    const user = await Users.findOne({ userID: ctx.update.callback_query.from.id });
+    const keyboard = Markup.inlineKeyboard([
+        Markup.button.url('کلیک کن', `http://127.0.0.1:3000/:${user.id}`),
+    ])
+    if (ctx.update.callback_query.message.chat.type == 'group') {
+        ctx.reply('کاربر گرامی برای ارتقای پنل از طریق Pv اقدام کنید.');
+    } else {
+        if (!user.phone) {
+            ctx.reply('لطفا شماره تلفن همراه خود را وارد کنید', {
+                reply_markup: {
+                    keyboard: [[
+                        { text: '📲 ارسال شماره تلفن همراه', request_contact: true },
+                        { text: "🔙 بازگشت", callback_query: null }
+                    ]]
+                }
+            });
+        }
+        else {
+            ctx.reply("بزن بریم بخریم ...", keyboard);
+        }
+    }
+});
+
+bot.action(/^chart_/, (ctx) => {
     const text = ctx.match.input.split("_")[1];
     ctx.replyWithPhoto({
         source: "./public/img/chart.jpg"
@@ -303,6 +334,8 @@ bot.action(/^question_/, async (ctx) => {
     isComparison = true;
     const text = ctx.match.input.split("_")[1];
     const symbol = await Companies.findOne({ symbol: text });
+
+
     if (pelan == 'Bronze') {
         isComparison = false;
         ctx.reply("شما از پلن برنزی استفاده میکنید برای استفاده از این قابلیت باید اشتراک تهیه کنید.", {
@@ -310,12 +343,8 @@ bot.action(/^question_/, async (ctx) => {
                 inline_keyboard: [
                     [
                         {
-                            text: "پنل نقره ای\n50،000 ریال",
-                            callback_data: "chart_" + text
-                        },
-                        {
-                            text: "پنل طلایی\n100،000 ریال",
-                            callback_data: "question_" + text
+                            text: "ارتقای پنل",
+                            callback_data: "buyPanel_"
                         }
                     ]
                 ]
@@ -349,5 +378,5 @@ bot.launch()
     });
 
 // Enable graceful stop
-process.once('SIGINT', () => bot.stop('SIGINT'))
-process.once('SIGTERM', () => bot.stop('SIGTERM'))
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));

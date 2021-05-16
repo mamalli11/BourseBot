@@ -1,15 +1,30 @@
 const path = require('path');
-
+const { IdValidator } = require('./../Utils/IdValidator');
 const request = require('request-promise');
+
+const Users = require("../models/Users");
 
 // const { Rite, User, Cart, Actors, Discount, Payment } = require("../models/index");
 
 
-//^ 
+//^ ارسال صفحه اصلی
 exports.index = async (req, res) => {
+    const id = req.params.userId;
     try {
-        res.sendFile(path.join(__dirname, "..", "Views", 'index.html'));
+       
+        if (IdValidator(id)) {
+            const user = await Users.findById(id);
+            if (user) {
+                res.sendFile(path.join(__dirname, "..", "Views", 'index.html'));
+            }
+            else {
+                res.render("404")
+            }
+        }
+        
+
     } catch (err) {
+        console.log(err);
         res.status(400).json({ error: err });
     }
 };
@@ -21,12 +36,13 @@ exports.buyRite = async (req, res) => {
     let user;
 
     try {
-        const cart = await User.findById(user.id)
+        const cart = req.params.code
+
         const fact = await Cart.findById(cart.cart);
         if (user.fullname && user.fullname.length >= 3) {
             let params = {
                 MerchantID: '97221328-b053-11e7-bfb0-005056a205be',
-                Amount: fact.payable,
+                Amount: cart == 'Gold' ? "100000" : "50000",
                 CallbackURL: `http://localhost:3000/api/payment/callbackurl`,
                 Description: 'خرید محصول',
                 Mobile: user.phone

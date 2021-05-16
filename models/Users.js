@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema(
         },
         first_name: { type: String },
         username: { type: String },
+        phone: { type: String },
         is_bot: { type: Boolean },
         pelan: {
             type: String,
