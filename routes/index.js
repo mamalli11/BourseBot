@@ -6,10 +6,10 @@ const indexController = require("../controllers/indexController");
 
 //^  @desc   Index Page
 //*  @route  GET /
-router.get("/:userId", indexController.index);
+router.get("/:id", indexController.index);
 
-//^  @desc   Buy Rite
-//*  @route  POST /buy
-router.post("/buy/:code", indexController.buyRite);
+//^  @desc   Buy Panel
+//*  @route  GET /buy
+router.get("/buy/:userId/:code", indexController.buyPanel);
 
 module.exports = router;

@@ -1,45 +1,40 @@
 const path = require('path');
-const { IdValidator } = require('./../Utils/IdValidator');
 const request = require('request-promise');
 
+const { IdValidator } = require('./../Utils/IdValidator');
 const Users = require("../models/Users");
-
-// const { Rite, User, Cart, Actors, Discount, Payment } = require("../models/index");
-
 
 //^ ارسال صفحه اصلی
 exports.index = async (req, res) => {
-    const id = req.params.userId;
+    const { id } = req.params;
+    console.log(id);
     try {
-       
-        if (IdValidator(id)) {
+
+        if (IdValidator(id) || id.length > 12) {
             const user = await Users.findById(id);
             if (user) {
-                res.sendFile(path.join(__dirname, "..", "Views", 'index.html'));
+                res.render('index', { id })
             }
-            else {
-                res.render("404")
-            }
+            else { throw 'err' }
         }
-        
+        else { throw 'err' }
 
     } catch (err) {
-        console.log(err);
-        res.status(400).json({ error: err });
+        // console.log(err);
+        res.render('404');
     }
 };
 
-
-
 //^ ارسال کاربر به درگاه پرداخت
-exports.buyRite = async (req, res) => {
-    let user;
-
+exports.buyPanel = async (req, res) => {
     try {
         const cart = req.params.code
+        console.log(cart);
+        const user = await Users.findById(id);
+        console.log(user);
 
-        const fact = await Cart.findById(cart.cart);
-        if (user.fullname && user.fullname.length >= 3) {
+        // const fact = await Cart.findById(cart.cart);
+        if (user.phone) {
             let params = {
                 MerchantID: '97221328-b053-11e7-bfb0-005056a205be',
                 Amount: cart == 'Gold' ? "100000" : "50000",
@@ -57,18 +52,16 @@ exports.buyRite = async (req, res) => {
                 throw error;
             }
 
-            await Payment.create({
-                user: user.id,
-                cartId: fact,
-                products: fact.products,
-                resnumber: data.Authority,
-                discount: fact.discoun,
-                price: fact.payable,
-            })
+            // await Payment.create({
+            //     user: user.id,
+            //     cartId: fact,
+            //     products: fact.products,
+            //     resnumber: data.Authority,
+            //     discount: fact.discoun,
+            //     price: fact.payable,
+            // })
 
-            const link = `https://www.zarinpal.com/pg/StartPay/${data.Authority}`;
-
-            res.status(200).json({ message: link })
+            res.redirect(`https://www.zarinpal.com/pg/StartPay/${data.Authority}`)
         }
         else {
             res.status(400).json({ message: "قبل از خرید اطلاعات حساب کاربری را تکمیل کنید" })

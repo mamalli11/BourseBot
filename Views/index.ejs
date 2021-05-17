@@ -32,8 +32,8 @@
                 <div class="h-bg-inner"></div>
               </div>
 
-              <a class="cart" href="#">
-                <span class="price">50.000 ريال</span>
+              <a class="cart" href="/buy/<%= id %>/Bronze">
+                <span class="price">50،000 ريال</span>
                 <span class="add-to-cart">
                   <span class="txt">خرید کردن</span>
                 </span>
@@ -63,8 +63,8 @@
                 <div class="h-bg-inner"></div>
               </div>
 
-              <a class="cart" href="#">
-                <span class="price">100.000 ريال</span>
+              <a class="cart" href="/buy/<%= id %>/Gold">
+                <span class="price">100،000 ريال</span>
                 <span class="add-to-cart">
                   <span class="txt">خرید کردن</span>
                 </span>
@@ -77,5 +77,9 @@
   </div>
 </body>
 
+<script>
+  const queryString = window.location.search;
+  console.log(queryString);
+</script>
 
 </html>

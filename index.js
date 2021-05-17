@@ -49,11 +49,15 @@ createData();
 //* Static Folder
 app.use("/public", express.static(path.join(__dirname, "public")));
 
+//* View Engine
+app.set('view engine', 'ejs');
+app.set("views", "views");
+
 //* BodyPaser
 app.use(setHeaders);
 
 //* Routes
-app.use("/", require("./routes/"));
+app.use("/", require("./routes/index"));
 app.use("/api", require("./routes/payment"));
 
 //* 404 Page
