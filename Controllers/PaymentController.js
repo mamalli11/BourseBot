@@ -1,29 +1,42 @@
 const AutoBind = require("auto-bind");
 const request = require("request-promise");
 
-// const { Rite, User, Discount, Payment } = require("../models/index");
+const Payment = require("../models/Payment");
 
 //^ اتصال به درگاه پرداخت و بررسی موفق بودن پرداخت 
 class PaymentController {
 
   constructor() {
-    AutoBind(this);
+    AutoBind(this)
   }
 
   async CallBackUrl(req, res, next) {
-    const payment = await Payment.findOne({ resnumber: req.query.Authority });
+    const payment = await Payment.findOne({
+      resnumber: req.query.Authority
+    });
 
     if (!payment) {
-      return res.status(401).send("لینک پرداخت فاقد اعتبار است");
+      return res.render('PaymentCart', {
+        Status: false,
+        Message: "لینک پرداخت فاقد اعتبار است",
+        ECode: 401
+      });
     }
 
-    if (payment.products.lenght == 0) {y
-      
-      return res.status(401).send("هیچ محصولی برای خرید انتخاب نشده است");
+    if (payment.product.lenght == 0) {
+      return res.render('PaymentCart', {
+        Status: false,
+        Message: "هیچ محصولی برای خرید انتخاب نشده است",
+        ECode: 401
+      });
     }
 
     if (req.query.Status && req.query.Status != "OK") {
-      return res.status(401).send("امکان خرید در حال حاضر وجود ندارد بعدا تلاش نمایید");
+      return res.render('PaymentCart', {
+        Status: false,
+        Message: "امکان خرید در حال حاضر وجود ندارد بعدا تلاش نمایید",
+        ECode: 401
+      });
     }
 
     let params = {
@@ -40,35 +53,34 @@ class PaymentController {
 
       if (data.Status == 100) {
 
-        await payment.set({ payment: true });
-
-        payment.products.map(async (item) => {
-          await Rite.findByIdAndUpdate(item.product, { $inc: { soldCount: 1 } });
-          const user = await User.findById(payment.user);
-          if (user.payCash.indexOf(item.product) === -1) {
-            user.payCash.push(item.product);
-            user.meRite.push(item.product)
-            user.cart = null;
-            await user.save();
-          }
-          //از تعداد کد تخفیف باقی مانده کم میکند
-          await Discount.findByIdAndUpdate(cartId, { $inc: { percentage: -1 } });
-          const dis = await Discount.findById(cartId)
-          if (dis.count == 0) {
-            dis.status = "inactive";
-            await dis.save();
-          }
+        await payment.set({
+          payment: true
         });
 
+        const user = await User.findById(payment.user);
+        user.pelan = payment.product;
+        await user.save();
         await payment.save();
 
-        return res.status(200).send("خرید با موفقیت انجام شد");
+        return res.render('PaymentCart', {
+          Status: true,
+          Message: "خرید با موفقیت انجام شد",
+          ECode: 200
+        })
       } else {
-        return res.status(401).send("فرآیند خرید با مشکل روبرو می باشد بعدا تلاش نمایید");
+        return res.render('PaymentCart', {
+          Status: false,
+          Message: "فرآیند خرید با مشکل روبرو می باشد بعدا تلاش نمایید",
+          ECode: 401
+        });
       }
     })
       .catch((err) => {
-        res.status(401).send(err.message);
+        return res.render('PaymentCart', {
+          Status: false,
+          Message: err.message,
+          ECode: 401
+        });
       });
   }
 

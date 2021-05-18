@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema(
         pelan: {
             type: String,
             default: "Bronze",
-            enum: ["Golden", "Silver","Bronze"],
+            enum: ["Golden", "Silver", "Bronze"],
         },
         isAdmin: {
             type: Boolean,

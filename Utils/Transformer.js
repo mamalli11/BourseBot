@@ -8,14 +8,13 @@ module.exports.symbolButtonList = (symbols) => {
         }
         arr[arr.length - 1].push({
             text: item.symbol,
-        })
+        });
     });
     arr.push(["🔙 بازگشت"]);
     return arr;
 };
 
 module.exports.categorizedButtonList = (symbols) => {
-
     const symbolList = Object.values(symbols);
     let arr = [];
     symbolList.forEach((item, index) => {
@@ -25,14 +24,13 @@ module.exports.categorizedButtonList = (symbols) => {
         }
         arr[arr.length - 1].push({
             text: item.GroupName.substring(0, 25),
-        })
+        });
     });
     arr.push(["🔙 بازگشت"]);
     return arr;
 };
 
 module.exports.searchButtonList = (symbols) => {
-
     const symbolList = Object.values(symbols);
     let arr = [];
     symbolList.forEach((item, index) => {
@@ -42,7 +40,7 @@ module.exports.searchButtonList = (symbols) => {
         }
         arr[arr.length - 1].push({
             text: item.symbol,
-        })
+        });
     });
     arr.push(["🔙 بازگشت"]);
     return arr;

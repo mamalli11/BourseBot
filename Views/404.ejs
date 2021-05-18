@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/404.css">
-    <title>404 Page</title>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <title><%= Title %></title>
 
 </head>
 
@@ -22,11 +23,11 @@
     <div class="star star5"></div>
 
     <div class="error">
-        <div class="error__title">404</div>
+        <div class="error__title"><%= Code %> </div>
         <div class="error__subtitle">Hmmm...</div>
-        <div class="error__description">It looks like one of the developers fell asleep</div>
-        <button class="error__button error__button--active">LOGIN</button>
-        <button class="error__button">CONTACT</button>
+        <div class="error__description"><%= Message  %> </div>
+        <!-- <button class="error__button error__button--active">LOGIN</button>
+        <button class="error__button">CONTACT</button> -->
     </div>
 
     <div class="astronaut">

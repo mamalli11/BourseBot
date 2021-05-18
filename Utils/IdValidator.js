@@ -1,13 +1,11 @@
-const ObjectId = require('mongoose').Types.ObjectId;
+const ObjectId = require("mongoose").Types.ObjectId;
 
-module.exports.IdValidator =  (id) => {
-
+module.exports.IdValidator = (id) => {
     if (ObjectId.isValid(id)) {
-        if ((String)(new ObjectId(id)) === id) {
+        if (String(new ObjectId(id)) === id) {
             return true;
         }
         return false;
     }
     return false;
-
 };

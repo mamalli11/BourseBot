@@ -10,6 +10,6 @@ router.get("/:id", indexController.index);
 
 //^  @desc   Buy Panel
 //*  @route  GET /buy
-router.get("/buy/:userId/:code", indexController.buyPanel);
+router.get("/buy/:id/:panel", indexController.buyPanel);
 
 module.exports = router;

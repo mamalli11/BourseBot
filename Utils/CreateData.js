@@ -5,7 +5,6 @@ const symbolList = require("./data");
 const groupsList = require("./groups");
 
 module.exports.createData = async () => {
-
     const Companieslength = await Companies.find().countDocuments();
     const Grouplength = await Group.find().countDocuments();
 
@@ -19,9 +18,8 @@ module.exports.createData = async () => {
     if (Companieslength == 0) {
         symbolList.map(async (res) => {
             const gp = await Group.findOne({ GroupName: res.GroupName });
-            await Companies.create({...res,  GroupID: gp.id} );
+            await Companies.create({ ...res, GroupID: gp.id });
         });
         console.log("Save Data Companies");
     }
 };
-

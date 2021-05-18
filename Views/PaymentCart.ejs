@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/public/Css/Style.css">
+    <title>پرداخت</title>
+</head>
+
+<body>
+    <% if (Status) { %>
+        <div class="wrapper green">
+            <div class="header__wrapper">
+                <div class="header">
+                    <div class="sign"><span></span></div>
+                </div>
+            </div>
+            <h1>پرداخت موفقیت آمیز</h1>
+            <!-- <p>Everything works fine!</p> -->
+            <p><%= Message %></p>
+            <a href="https://t.me/IAUKhShBurse_bot?start=start">
+                <button>بزن بریم</button>
+            </a>
+        </div>
+        <% } else { %>
+            <div class="wrapper red">
+                <div class="header__wrapper">
+                    <div class="header">
+                        <div class="sign"><span></span></div>
+                    </div>
+                </div>
+                <h1>اوخییی</h1>
+                <p><%= Message %></p>
+                <h4><%= ECode %> : کد خطا</h4>
+                <a href="https://t.me/IAUKhShBurse_bot?start=start">
+                    <button>بازگشت</button>
+                </a>
+            </div>
+            <% } %>
+</body>
+
+</html>
