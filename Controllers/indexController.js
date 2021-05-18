@@ -26,10 +26,8 @@ exports.index = async (req, res) => {
 //^ ارسال کاربر به درگاه پرداخت
 exports.buyPanel = async (req, res) => {
   try {
-    console.log(req.params);
     const { id, panel } = req.params;
     const user = await Users.findById(id);
-    console.log(user);
 
     if (user.phone) {
       let params = {

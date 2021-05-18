@@ -244,12 +244,18 @@ bot.on("text", async (ctx) => {
             }
         }
     } else if (isComparison) {
-        const symbol = await Companies.findOne({ symbol: text });
-
-        if (CompSymbol.length == 1) {
-            CompSymbol.push(symbol);
-            ctx.reply(compSymbols(CompSymbol[0], CompSymbol[1]));
+        if (text == "🔙 بازگشت") {
             isComparison = false;
+            ctx.reply("عملیات مقایسه لغو شد...");
+
+        } else {
+            const symbol = await Companies.findOne({ symbol: text });
+
+            if (CompSymbol.length == 1) {
+                CompSymbol.push(symbol);
+                isComparison = false;
+                ctx.reply(compSymbols(CompSymbol[0], CompSymbol[1]));
+            }
         }
     } else if (isSearch) {
         const res = await Companies.find({ symbol: { $regex: text } });
@@ -268,11 +274,11 @@ bot.on("text", async (ctx) => {
 
 bot.on("voice", (ctx) => ctx.reply("😐 عزیزمن اخه مگه من میتونم ویس گوش بدم \nکه ویس می فرستی"));
 bot.on("photo", (ctx) => ctx.reply("😐 عزیزمن اخه مگه من میتونم عکس ببینم \nکه عکس می فرستی"));
-bot.on("video", (ctx) =>  ctx.reply("😐 عزیزمن اخه مگه من میتونم فیلم ببینم \nکه فیلم می فرستی"));
+bot.on("video", (ctx) => ctx.reply("😐 عزیزمن اخه مگه من میتونم فیلم ببینم \nکه فیلم می فرستی"));
 bot.on("document", (ctx) => ctx.reply("این فایلی که فرستادی به چه درد من میخوره 🙄"));
 bot.on("location", (ctx) => ctx.reply("اخه من لوکیشن میخوام چیکار 🤦🏻‍♂️"));
-bot.on("animation", (ctx) =>  ctx.reply("خداا شما اخر منو میکشید 😑 \n این چی چیه اخه برا من فرستادی"));
-bot.on("sticker", (ctx) =>  ctx.reply("خداا شما اخر منو میکشید 😑 \n استیکر برا چی میفرستی"));
+bot.on("animation", (ctx) => ctx.reply("خداا شما اخر منو میکشید 😑 \n این چی چیه اخه برا من فرستادی"));
+bot.on("sticker", (ctx) => ctx.reply("خداا شما اخر منو میکشید 😑 \n استیکر برا چی میفرستی"));
 bot.on("edited_message", (ctx) => ctx.reply("من زرنگ ترم قبل اینکه ویرایش کنی پیامت را خواندم 😎"));
 bot.on("message_auto_delete_timer_changed", (ctx) => ctx.reply("حالا میزاشتی پیام باشه چرا میخوای به پاکی\n انقدر به من بی اعتمادی 😒"));
 bot.on("contact", async (ctx) => {
@@ -287,7 +293,7 @@ bot.action(/^buyPanel_/, async (ctx) => {
         userID: ctx.update.callback_query.from.id,
     });
     const keyboard = Markup.inlineKeyboard([
-        Markup.button.url("کلیک کن", `http://127.0.0.1:3000/:${user.id}`),
+        Markup.button.url("کلیک کن", `http://127.0.0.1:3000/${user.id}`),
     ]);
     if (ctx.update.callback_query.message.chat.type == "group") {
         ctx.reply("کاربر گرامی برای ارتقای پنل از طریق Pv اقدام کنید.");
@@ -347,9 +353,12 @@ bot.action(/^question_/, async (ctx) => {
         if (CompSymbol.length == 0) {
             CompSymbol.push(symbol);
             ctx.reply("سهامی دوم را که میخواهید مقایسه کنید را وارد کنید");
-        } else if (CompSymbol.length > 2) {
+
+        } else if (CompSymbol.length > 1) {
             CompSymbol = [];
-            isComparison = false;
+            isComparison = true;
+            CompSymbol.push(symbol);
+            ctx.reply("سهامی دوم را که میخواهید مقایسه کنید را وارد کنید");
         }
     }
 });
