@@ -40,7 +40,7 @@ class PaymentController {
     }
 
     let params = {
-      MerchantID: "97221328-b053-11e7-bfb0-005056a205be",
+      MerchantID: process.env.MERCHANTID,
       Authority: req.query.Authority,
       Amount: payment.price,
     };

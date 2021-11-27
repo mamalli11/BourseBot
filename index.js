@@ -24,7 +24,7 @@ let isComparison = false, isSearch = false;
 let CompSymbol = [];
 
 //* Load Config
-dotEnv.config({ path: "./config/config.env" });
+dotEnv.config({ path: "./config/.env" });
 
 connectDB();
 debug("Connected To Database");
@@ -70,7 +70,7 @@ app.listen(PORT, () =>
     debug(`Server running in ${process.env.PORT} mode on port ${PORT}`)
 );
 
-const bot = new Telegraf(process.env.botToken);
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.use(async (ctx, next) => {
     try {
@@ -247,8 +247,8 @@ bot.on("text", async (ctx) => {
         if (text == "🔙 بازگشت") {
             isComparison = false;
             ctx.reply("عملیات مقایسه لغو شد...");
-
-        } else {
+        } 
+        else {
             const symbol = await Companies.findOne({ symbol: text });
 
             if (CompSymbol.length == 1) {
@@ -375,7 +375,3 @@ bot.launch()
             console.log(err);
         }
     });
-
-// Enable graceful stop
-process.once("SIGINT", () => bot.stop("SIGINT"));
-process.once("SIGTERM", () => bot.stop("SIGTERM"));

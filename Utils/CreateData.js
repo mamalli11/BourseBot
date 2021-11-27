@@ -5,21 +5,23 @@ const symbolList = require("./data");
 const groupsList = require("./groups");
 
 module.exports.createData = async () => {
-    const Companieslength = await Companies.find().countDocuments();
     const Grouplength = await Group.find().countDocuments();
+    const Companieslength = await Companies.find().countDocuments();
 
     if (Grouplength == 0) {
-        groupsList.map(async (res) => {
+        await groupsList.map(async (res) => {
             await Group.create(res);
         });
-        console.log("Save Data Groups");
+        console.log("*** Save Data Groups ***");
+
     }
 
-    if (Companieslength == 0) {
-        symbolList.map(async (res) => {
-            const gp = await Group.findOne({ GroupName: res.GroupName });
-            await Companies.create({ ...res, GroupID: gp.id });
+    if (Companieslength == 0 && await Group.find().countDocuments() > 0) {
+        await symbolList.map(async (res) => {
+            await Group.findOne({ GroupName: res.GroupName })
+                .then(async (result) => { await Companies.create({ ...res, GroupID: result._id }) })
+                .catch((error) => { console.log(error); })
         });
-        console.log("Save Data Companies");
+        console.log("*** Save Data Companies ***");
     }
 };

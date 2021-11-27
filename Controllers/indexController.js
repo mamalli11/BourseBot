@@ -31,7 +31,7 @@ exports.buyPanel = async (req, res) => {
 
     if (user.phone) {
       let params = {
-        MerchantID: "97221328-b053-11e7-bfb0-005056a205be",
+        MerchantID: process.env.MERCHANTID,
         Amount: panel == "Gold" ? "10000" : "5000",
         CallbackURL: `http://localhost:3000/api/payment/callbackurl`,
         Description: "خرید محصول",

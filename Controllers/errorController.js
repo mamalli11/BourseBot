@@ -1,5 +1,3 @@
-const path = require('path');
-
 //^ خطای 404
 exports.get404 = (req, res) =>
   res.render('404', {

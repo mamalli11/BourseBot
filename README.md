@@ -16,99 +16,83 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> ربات بورس تلگرام با قابلیت اتصال به درگاه بانکی و پنل دهی
     <br> 
 </p>
+<div dir="rtl">
 
-## 📝 Table of Contents
+## 📝 فهرست مطالب
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [درباره](#about)
+- [شروع به کار کردن](#getting_started)
+- [استفاده](#usage)
+- [ساخته شده با استفاده از](#built_using)
+- [نویسنده](#authors)
 
-## 🧐 About <a name = "about"></a>
+<br>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+## 🧐 درباره <a name = "about"></a>
+<br>
+با استفاده از این ربات می توانید اطلاعات سهم ها و شرکت ها مطلع بشید یا در گروه های تلگرام عضوش کنید و به صورت خودکار پاسخ کاربر داده می شود، این ربات یه سیستم پرداخت هم دارد که متصل میشود به درگاه زرین پال چون در این ربات یه سیستم کوچیک پنل (طلایی، نقره ای، برنزی) داره و کاربر با در نظر گرفتن پلن فعلیش به یه سری از قابلیت های ربات میتونه دسترسی پیداکنه و درصورت نیازیش با پرداخت هزینه میتواند پنل فعلی خودش را ارتقاء دهد.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+لازم به ذکر است که اطلاعات داخل پایگاه داده برنامه که به صورت خودکار ساخته می شود و قاقد ارزش می باشد.
+<br><br>
+<strong>توجه: هرگونه استفاده‌ی غیراخلاقی و غیر قانونی از برنامه بر عهده‌ی خود شخص می باشد و توسعه دهنده هیچگونه مسئولیتی ندارد.</strong>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+<br>
 
-### Prerequisites
+#
+## 🏁 شروع به کار کردن <a name = "getting_started"></a>
 
-What things you need to install the software and how to install them.
+این دستورالعمل ها یک نسخه از پروژه را برای اهداف توسعه و آزمایش در دستگاه محلی خود راه اندازی و اجرا می کند.
+<br>
 
-```
-Give examples
-```
+## نحوه اجرا
 
-### Installing
+بعد از باز کردن پروژه در ادیتور لازم است فایل .env ساخته شود مشابه .env.exmple و 
+مقادیر درخواست شده را پر کنید 
 
-A step by step series of examples that tell you how to get a development env running.
+<strong> نکته برای اجرای برنامه لازم است از <a href="https://t.me/BotFather">BotFather</a> توکن در یافت کنید .</strong>
 
-Say what the step will be
+برای اتصال به درگاه زرین پال نیازمند MerchantID می باشد که برای اتصال به در گاه الزامی می باشد.
 
-```
-Give the example
-```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+در مرحله اول
 
 ```
-Give an example
+npm i
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+در مرحله دوم
 
 ```
-Give an example
+npm start
 ```
 
-## 🎈 Usage <a name="usage"></a>
+اگر در حالت توسعه قصد اجرا برنامه را دارید
 
-Add notes about how to use the system.
+```
+npm run dev
+```
 
-## 🚀 Deployment <a name = "deployment"></a>
+#
+## 🎈 استفاده <a name="usage"></a>
 
-Add additional notes about how to deploy this on a live system.
+کاربرد اصلی این ربات برای دریافت و ارسال سهم های بورس است که قابلیت هایی نظیر پاسخ دادن خودکار در گروه های تلگرام ، مقایسه سهم ها ، جستجو و نمایش به صورت دسته بندی شده است
 
-## ⛏️ Built Using <a name = "built_using"></a>
+</div>
+
+#
+## ⛏️ ساخته شده با استفاده از <a name = "built_using"></a>
 
 - [MongoDB](https://www.mongodb.com/) - Database
 - [Express](https://expressjs.com/) - Server Framework
 - [TelegrafJs](https://telegraf.js.org/) - Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ✍️ Authors <a name = "authors"></a>
+#
+## ✍️ نویسنده <a name = "authors"></a>
 
 - [@mamalli11](https://github.com/mamalli11) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/mamalli11/BourseBot/graphs/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+فهرست [مشارکت کنندگان](https://github.com/mamalli11/BourseBot/graphs/contributors) که در این پروژه شرکت کردند را نیز ببینید.
